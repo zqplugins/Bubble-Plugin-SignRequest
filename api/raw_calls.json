@@ -1,0 +1,804 @@
+{
+    "auth": "private_key_header",
+    "calls": {
+        "AAI": {
+            "body": "{\n  \"from_email\": \"<from_email>\",\n  \"from_email_name\": \"<from_email_name>\",\n  \"is_being_prepared\": <is_being_prepared>,\n  \"redirect_url\": \"<redirect_url>\",\n  \"redirect_url_declined\": \"<redirect_url_error>\",\n  \"disable_attachments\": false,\n  \"disable_text_signatures\": false,\n  \"disable_text\": false,\n  \"disable_date\": false,\n  \"disable_emails\": false,\n  \"disable_upload_signatures\": false,\n  \"subject\": \"<subject>\",\n  \"message\": \"<message>\",\n  \"who\": \"mo\",\n  \"send_reminders\": <send_reminders?>,\n  \"signers\": [\n    {\n      \"email\": \"<signer_email>\",\n      \"first_name\": \"<signer_first_name>\",\n      \"last_name\": \"<signer_last_name>\",\n      \"needs_to_sign\": <signer_needs_to_sign>,\n      \"approve_only\": <signer_approve_only>,\n      \"notify_only\": <signer_notify_only>,\n      \"in_person\": <signer_>,\n      \"order\": 0,\n      \"language\": \"<lang>\"\n    }\n  ],\n\n  \"template\": \"<template>\",\n  \"auto_delete_days\": <auto_delete_days>,\n  \"auto_expire_days\": <auto_expire_days>\n}",
+            "body_params": {
+                "AAK": {
+                    "key": "from_email",
+                    "private": true,
+                    "value": "vnihoul77@gmail.com"
+                },
+                "AAP": {
+                    "key": "from_email_name",
+                    "private": true,
+                    "value": "Ottho"
+                },
+                "AAR": {
+                    "key": "is_being_prepared",
+                    "private": true,
+                    "value": "false"
+                },
+                "AAS": {
+                    "key": "redirect_url",
+                    "private": true,
+                    "value": "https://app.ottho.tools/action=signature"
+                },
+                "AAY": {
+                    "key": "redirect_url_error",
+                    "private": true,
+                    "value": "https://app.ottho.tools/action=signature"
+                },
+                "AAZ": {
+                    "key": "subject",
+                    "private": true,
+                    "value": "Test"
+                },
+                "AAa": {
+                    "key": "message",
+                    "private": true,
+                    "value": "test"
+                },
+                "AAh": {
+                    "key": "signer_",
+                    "private": true,
+                    "value": "false"
+                },
+                "AAj": {
+                    "key": "signer_first_name",
+                    "private": true,
+                    "value": "Victor"
+                },
+                "AAk": {
+                    "key": "signer_last_name",
+                    "private": true,
+                    "value": "Nihoul"
+                },
+                "AAl": {
+                    "key": "signer_needs_to_sign",
+                    "private": true,
+                    "value": "true"
+                },
+                "AAm": {
+                    "key": "signer_approve_only",
+                    "private": true,
+                    "value": "false"
+                },
+                "AAn": {
+                    "key": "signer_notify_only",
+                    "private": true,
+                    "value": "false"
+                },
+                "AAr": {
+                    "key": "lang",
+                    "private": true,
+                    "value": "fr"
+                },
+                "ABY": {
+                    "key": "auto_expire_days",
+                    "private": true,
+                    "value": "1"
+                },
+                "ABZ": {
+                    "key": "auto_delete_days",
+                    "private": true,
+                    "value": "1"
+                },
+                "ABa": {
+                    "key": "template",
+                    "private": true,
+                    "value": "https://ottho-fr.signrequest.com/api/v1/templates/2cd86cf6-7902-49e8-875c-dfe99fb89e9f/"
+                },
+                "ACG": {
+                    "key": "signer_email",
+                    "private": true,
+                    "value": "3vnihoul77@gmail.com"
+                },
+                "ACI": {
+                    "key": "send_reminders?",
+                    "private": true,
+                    "value": "true"
+                }
+            },
+            "headers": {
+                "AAJ": {
+                    "key": "Content-Type",
+                    "private": true,
+                    "value": "application/json"
+                }
+            },
+            "initialized": true,
+            "method": "post",
+            "name": "Quick request (1 signer)",
+            "publish_as": "action",
+            "rank": 2,
+            "ret_value": "api.1611558936137x553319032810897400.plugin_api.AAI",
+            "should_reinitialize": true,
+            "types": "{\"plugin_api.AAI\":{\"caption\":\"Quick request (1 signer)\",\"fields\":{\"_p_from_email\":{\"ret_value\":\"text\",\"caption\":\"from_email\",\"sample_value\":\"vnihoul77@gmail.com\",\"path\":[\"from_email\"]},\"_p_from_email_name\":{\"ret_value\":\"text\",\"caption\":\"from_email_name\",\"sample_value\":\"Ottho\",\"path\":[\"from_email_name\"]},\"_p_is_being_prepared\":{\"ret_value\":\"boolean\",\"caption\":\"is_being_prepared\",\"sample_value\":false,\"path\":[\"is_being_prepared\"]},\"_p_prepare_url\":{\"ret_value\":\"text\",\"caption\":\"prepare_url\",\"sample_value\":null,\"path\":[\"prepare_url\"]},\"_p_redirect_url\":{\"ret_value\":\"text\",\"caption\":\"redirect_url\",\"sample_value\":\"https://app.ottho.tools/action=signature\",\"path\":[\"redirect_url\"]},\"_p_redirect_url_declined\":{\"ret_value\":\"text\",\"caption\":\"redirect_url_declined\",\"sample_value\":\"https://app.ottho.tools/action=signature\",\"path\":[\"redirect_url_declined\"]},\"_p_disable_attachments\":{\"ret_value\":\"boolean\",\"caption\":\"disable_attachments\",\"sample_value\":false,\"path\":[\"disable_attachments\"]},\"_p_disable_text_signatures\":{\"ret_value\":\"boolean\",\"caption\":\"disable_text_signatures\",\"sample_value\":false,\"path\":[\"disable_text_signatures\"]},\"_p_disable_text\":{\"ret_value\":\"boolean\",\"caption\":\"disable_text\",\"sample_value\":false,\"path\":[\"disable_text\"]},\"_p_disable_date\":{\"ret_value\":\"boolean\",\"caption\":\"disable_date\",\"sample_value\":false,\"path\":[\"disable_date\"]},\"_p_disable_emails\":{\"ret_value\":\"boolean\",\"caption\":\"disable_emails\",\"sample_value\":false,\"path\":[\"disable_emails\"]},\"_p_disable_upload_signatures\":{\"ret_value\":\"boolean\",\"caption\":\"disable_upload_signatures\",\"sample_value\":false,\"path\":[\"disable_upload_signatures\"]},\"_p_force_signature_color\":{\"ret_value\":\"text\",\"caption\":\"force_signature_color\",\"sample_value\":null,\"path\":[\"force_signature_color\"]},\"_p_disable_blockchain_proof\":{\"ret_value\":\"text\",\"caption\":\"disable_blockchain_proof\",\"sample_value\":null,\"path\":[\"disable_blockchain_proof\"]},\"_p_text_message_verification_locked\":{\"ret_value\":\"text\",\"caption\":\"text_message_verification_locked\",\"sample_value\":null,\"path\":[\"text_message_verification_locked\"]},\"_p_subject\":{\"ret_value\":\"text\",\"caption\":\"subject\",\"sample_value\":\"Test\",\"path\":[\"subject\"]},\"_p_message\":{\"ret_value\":\"text\",\"caption\":\"message\",\"sample_value\":\"test\",\"path\":[\"message\"]},\"_p_who\":{\"ret_value\":\"text\",\"caption\":\"who\",\"sample_value\":\"mo\",\"path\":[\"who\"]},\"_p_send_reminders\":{\"ret_value\":\"boolean\",\"caption\":\"send_reminders\",\"sample_value\":true,\"path\":[\"send_reminders\"]},\"_p_signers\":{\"ret_value\":\"list.api.1611558936137x553319032810897400.plugin_api.AAI.signers\",\"caption\":\"signers\",\"path\":[\"signers\"]},\"_p_uuid\":{\"ret_value\":\"text\",\"caption\":\"uuid\",\"sample_value\":\"497a7a20-5c64-4001-ac08-a722a1f2e0bf\",\"path\":[\"uuid\"]},\"_p_url\":{\"ret_value\":\"text\",\"caption\":\"url\",\"sample_value\":\"https://ottho-fr.signrequest.com/api/v1/signrequests/497a7a20-5c64-4001-ac08-a722a1f2e0bf/\",\"path\":[\"url\"]},\"_p_document\":{\"ret_value\":\"text\",\"caption\":\"document\",\"sample_value\":\"https://ottho-fr.signrequest.com/api/v1/documents/da440ac8-ada8-4d1c-8729-50dbe6cfd727/\",\"path\":[\"document\"]},\"_p_integration\":{\"ret_value\":\"text\",\"caption\":\"integration\",\"sample_value\":null,\"path\":[\"integration\"]},\"_p_integration_data\":{\"ret_value\":\"text\",\"caption\":\"integration_data\",\"sample_value\":null,\"path\":[\"integration_data\"]},\"_p_name\":{\"ret_value\":\"text\",\"caption\":\"name\",\"sample_value\":null,\"path\":[\"name\"]},\"_p_external_id\":{\"ret_value\":\"text\",\"caption\":\"external_id\",\"sample_value\":null,\"path\":[\"external_id\"]},\"_p_file\":{\"ret_value\":\"text\",\"caption\":\"file\",\"sample_value\":null,\"path\":[\"file\"]},\"_p_file_from_url\":{\"ret_value\":\"text\",\"caption\":\"file_from_url\",\"sample_value\":null,\"path\":[\"file_from_url\"]},\"_p_events_callback_url\":{\"ret_value\":\"text\",\"caption\":\"events_callback_url\",\"sample_value\":null,\"path\":[\"events_callback_url\"]},\"_p_file_from_sf\":{\"ret_value\":\"text\",\"caption\":\"file_from_sf\",\"sample_value\":null,\"path\":[\"file_from_sf\"]},\"_p_auto_delete_days\":{\"ret_value\":\"text\",\"caption\":\"auto_delete_days\",\"sample_value\":null,\"path\":[\"auto_delete_days\"]},\"_p_auto_expire_days\":{\"ret_value\":\"text\",\"caption\":\"auto_expire_days\",\"sample_value\":null,\"path\":[\"auto_expire_days\"]}}},\"plugin_api.AAI.signers\":{\"caption\":\"Quick request (1 signer) signer\",\"fields\":{\"_p_email\":{\"ret_value\":\"text\",\"caption\":\"email\",\"sample_value\":\"vnihoul77@gmail.com\",\"path\":[\"email\"]},\"_p_display_name\":{\"ret_value\":\"text\",\"caption\":\"display_name\",\"sample_value\":\"Victor Nihoul (vnihoul77@gmail.com)\",\"path\":[\"display_name\"]},\"_p_first_name\":{\"ret_value\":\"text\",\"caption\":\"first_name\",\"sample_value\":\"Victor\",\"path\":[\"first_name\"]},\"_p_last_name\":{\"ret_value\":\"text\",\"caption\":\"last_name\",\"sample_value\":\"Nihoul\",\"path\":[\"last_name\"]},\"_p_email_viewed\":{\"ret_value\":\"boolean\",\"caption\":\"email_viewed\",\"sample_value\":false,\"path\":[\"email_viewed\"]},\"_p_viewed\":{\"ret_value\":\"boolean\",\"caption\":\"viewed\",\"sample_value\":false,\"path\":[\"viewed\"]},\"_p_signed\":{\"ret_value\":\"boolean\",\"caption\":\"signed\",\"sample_value\":false,\"path\":[\"signed\"]},\"_p_downloaded\":{\"ret_value\":\"boolean\",\"caption\":\"downloaded\",\"sample_value\":false,\"path\":[\"downloaded\"]},\"_p_signed_on\":{\"ret_value\":\"text\",\"caption\":\"signed_on\",\"sample_value\":null,\"path\":[\"signed_on\"]},\"_p_needs_to_sign\":{\"ret_value\":\"boolean\",\"caption\":\"needs_to_sign\",\"sample_value\":true,\"path\":[\"needs_to_sign\"]},\"_p_approve_only\":{\"ret_value\":\"boolean\",\"caption\":\"approve_only\",\"sample_value\":false,\"path\":[\"approve_only\"]},\"_p_notify_only\":{\"ret_value\":\"boolean\",\"caption\":\"notify_only\",\"sample_value\":false,\"path\":[\"notify_only\"]},\"_p_in_person\":{\"ret_value\":\"boolean\",\"caption\":\"in_person\",\"sample_value\":false,\"path\":[\"in_person\"]},\"_p_order\":{\"ret_value\":\"number\",\"caption\":\"order\",\"sample_value\":0,\"path\":[\"order\"]},\"_p_language\":{\"ret_value\":\"text\",\"caption\":\"language\",\"sample_value\":\"en-gb\",\"path\":[\"language\"]},\"_p_force_language\":{\"ret_value\":\"boolean\",\"caption\":\"force_language\",\"sample_value\":false,\"path\":[\"force_language\"]},\"_p_emailed\":{\"ret_value\":\"boolean\",\"caption\":\"emailed\",\"sample_value\":false,\"path\":[\"emailed\"]},\"_p_verify_phone_number\":{\"ret_value\":\"text\",\"caption\":\"verify_phone_number\",\"sample_value\":null,\"path\":[\"verify_phone_number\"]},\"_p_verify_bank_account\":{\"ret_value\":\"text\",\"caption\":\"verify_bank_account\",\"sample_value\":null,\"path\":[\"verify_bank_account\"]},\"_p_declined\":{\"ret_value\":\"boolean\",\"caption\":\"declined\",\"sample_value\":false,\"path\":[\"declined\"]},\"_p_declined_on\":{\"ret_value\":\"text\",\"caption\":\"declined_on\",\"sample_value\":null,\"path\":[\"declined_on\"]},\"_p_forwarded\":{\"ret_value\":\"boolean\",\"caption\":\"forwarded\",\"sample_value\":false,\"path\":[\"forwarded\"]},\"_p_forwarded_on\":{\"ret_value\":\"text\",\"caption\":\"forwarded_on\",\"sample_value\":null,\"path\":[\"forwarded_on\"]},\"_p_forwarded_to_email\":{\"ret_value\":\"text\",\"caption\":\"forwarded_to_email\",\"sample_value\":null,\"path\":[\"forwarded_to_email\"]},\"_p_forwarded_reason\":{\"ret_value\":\"text\",\"caption\":\"forwarded_reason\",\"sample_value\":null,\"path\":[\"forwarded_reason\"]},\"_p_message\":{\"ret_value\":\"text\",\"caption\":\"message\",\"sample_value\":null,\"path\":[\"message\"]},\"_p_embed_url_user_id\":{\"ret_value\":\"text\",\"caption\":\"embed_url_user_id\",\"sample_value\":null,\"path\":[\"embed_url_user_id\"]},\"_p_use_stamp_for_approve_only\":{\"ret_value\":\"boolean\",\"caption\":\"use_stamp_for_approve_only\",\"sample_value\":false,\"path\":[\"use_stamp_for_approve_only\"]},\"_p_embed_url\":{\"ret_value\":\"text\",\"caption\":\"embed_url\",\"sample_value\":null,\"path\":[\"embed_url\"]},\"_p_redirect_url\":{\"ret_value\":\"text\",\"caption\":\"redirect_url\",\"sample_value\":\"https://app.ottho.tools/action=signature\",\"path\":[\"redirect_url\"]},\"_p_redirect_url_declined\":{\"ret_value\":\"text\",\"caption\":\"redirect_url_declined\",\"sample_value\":\"https://app.ottho.tools/action=signature\",\"path\":[\"redirect_url_declined\"]},\"_p_after_document\":{\"ret_value\":\"text\",\"caption\":\"after_document\",\"sample_value\":null,\"path\":[\"after_document\"]}}}}",
+            "url": "https://[domain].signrequest.com/api/v1/signrequest-quick-create/",
+            "url_params": {
+                "ABW": {
+                    "key": "domain",
+                    "private": true,
+                    "value": "ottho-fr"
+                }
+            }
+        },
+        "ABK": {
+            "initialized": true,
+            "method": "get",
+            "name": "Get all templates",
+            "params": {
+                "ABM": {
+                    "key": "page",
+                    "optional": true,
+                    "private": true,
+                    "value": ""
+                },
+                "ABN": {
+                    "key": "limit",
+                    "optional": true,
+                    "private": true,
+                    "value": ""
+                }
+            },
+            "publish_as": "data",
+            "rank": 0,
+            "ret_value": "api.1611558936137x553319032810897400.plugin_api.ABK",
+            "should_reinitialize": true,
+            "types": "{\"plugin_api.ABK\":{\"caption\":\"Get all template\",\"fields\":{\"_p_count\":{\"ret_value\":\"number\",\"caption\":\"count\",\"sample_value\":30,\"path\":[\"count\"]},\"_p_next\":{\"ret_value\":\"_ignore\"},\"_p_previous\":{\"ret_value\":\"_ignore\"},\"_p_results\":{\"ret_value\":\"list.api.1611558936137x553319032810897400.plugin_api.ABK.results\",\"caption\":\"results\",\"path\":[\"results\"]}}},\"plugin_api.ABK.results\":{\"caption\":\"Get all templates result\",\"fields\":{\"_p_url\":{\"ret_value\":\"text\",\"caption\":\"url\",\"sample_value\":\"https://ottho-fr.signrequest.com/api/v1/templates/39c36c47-7244-42c0-9ce4-4c44a85dac64/\",\"path\":[\"url\"]},\"_p_name\":{\"ret_value\":\"text\",\"caption\":\"name\",\"sample_value\":\"LM-Mentor Dev#62-Mois2_Martin.pdf\",\"path\":[\"name\"]},\"_p_uuid\":{\"ret_value\":\"text\",\"caption\":\"uuid\",\"sample_value\":\"39c36c47-7244-42c0-9ce4-4c44a85dac64\",\"path\":[\"uuid\"]},\"_p_user.email\":{\"ret_value\":\"text\",\"caption\":\"user email\",\"sample_value\":\"ottho.tools@gmail.com\",\"path\":[\"user\",\"email\"]},\"_p_user.first_name\":{\"ret_value\":\"text\",\"caption\":\"user first_name\",\"sample_value\":\"Ottho\",\"path\":[\"user\",\"first_name\"]},\"_p_user.last_name\":{\"ret_value\":\"text\",\"caption\":\"user last_name\",\"sample_value\":\"\",\"path\":[\"user\",\"last_name\"]},\"_p_user.display_name\":{\"ret_value\":\"text\",\"caption\":\"user display_name\",\"sample_value\":\"Ottho (ottho.tools@gmail.com)\",\"path\":[\"user\",\"display_name\"]},\"_p_team.name\":{\"ret_value\":\"text\",\"caption\":\"team name\",\"sample_value\":\"Ottho V3\",\"path\":[\"team\",\"name\"]},\"_p_team.subdomain\":{\"ret_value\":\"text\",\"caption\":\"team subdomain\",\"sample_value\":\"ottho-fr\",\"path\":[\"team\",\"subdomain\"]},\"_p_team.url\":{\"ret_value\":\"text\",\"caption\":\"team url\",\"sample_value\":\"https://ottho-fr.signrequest.com/api/v1/teams/ottho-fr/\",\"path\":[\"team\",\"url\"]},\"_p_who\":{\"ret_value\":\"text\",\"caption\":\"who\",\"sample_value\":\"o\",\"path\":[\"who\"]},\"_p_signers\":{\"ret_value\":\"list.api.1611558936137x553319032810897400.plugin_api.ABK.signers\",\"caption\":\"signers\",\"path\":[\"signers\"]}}},\"plugin_api.ABK.signers\":{\"caption\":\"Get all templates signer\",\"fields\":{\"_p_signer_index\":{\"ret_value\":\"number\",\"caption\":\"signer_index\",\"sample_value\":0,\"path\":[\"signer_index\"]},\"_p_needs_to_sign\":{\"ret_value\":\"boolean\",\"caption\":\"needs_to_sign\",\"sample_value\":false,\"path\":[\"needs_to_sign\"]},\"_p_approve_only\":{\"ret_value\":\"boolean\",\"caption\":\"approve_only\",\"sample_value\":false,\"path\":[\"approve_only\"]},\"_p_notify_only\":{\"ret_value\":\"boolean\",\"caption\":\"notify_only\",\"sample_value\":false,\"path\":[\"notify_only\"]},\"_p_in_person\":{\"ret_value\":\"boolean\",\"caption\":\"in_person\",\"sample_value\":false,\"path\":[\"in_person\"]},\"_p_order\":{\"ret_value\":\"number\",\"caption\":\"order\",\"sample_value\":0,\"path\":[\"order\"]},\"_p_placeholders\":{\"ret_value\":\"list.api.1611558936137x553319032810897400.plugin_api.ABK.placeholders\",\"caption\":\"placeholders\",\"path\":[\"placeholders\"]}}},\"plugin_api.ABK.placeholders\":{\"caption\":\"Get all templates placeholder\",\"fields\":{\"_p_uuid\":{\"ret_value\":\"text\",\"caption\":\"uuid\",\"sample_value\":\"0caae8f5-8b9a-418f-b6e8-506f8ac9f7bd\",\"path\":[\"uuid\"]},\"_p_type\":{\"ret_value\":\"text\",\"caption\":\"type\",\"sample_value\":\"t\",\"path\":[\"type\"]},\"_p_page_index\":{\"ret_value\":\"number\",\"caption\":\"page_index\",\"sample_value\":0,\"path\":[\"page_index\"]},\"_p_prefill\":{\"ret_value\":\"boolean\",\"caption\":\"prefill\",\"sample_value\":false,\"path\":[\"prefill\"]},\"_p_text\":{\"ret_value\":\"text\",\"caption\":\"text\",\"sample_value\":\"\",\"path\":[\"text\"]},\"_p_checkbox_value\":{\"ret_value\":\"text\",\"caption\":\"checkbox_value\",\"sample_value\":null,\"path\":[\"checkbox_value\"]},\"_p_date_value\":{\"ret_value\":\"text\",\"caption\":\"date_value\",\"sample_value\":null,\"path\":[\"date_value\"]},\"_p_external_id\":{\"ret_value\":\"text\",\"caption\":\"external_id\",\"sample_value\":\"siret\",\"path\":[\"external_id\"]}}}}",
+            "url": "https://[domain].signrequest.com/api/v1/templates/",
+            "url_params": {
+                "ABL": {
+                    "key": "domain",
+                    "private": true,
+                    "value": "ottho-fr"
+                }
+            }
+        },
+        "ABP": {
+            "0": "A",
+            "1": "B",
+            "2": "O",
+            "initialized": true,
+            "method": "get",
+            "name": "Get a template",
+            "publish_as": "action",
+            "rank": 1,
+            "ret_value": "api.1611558936137x553319032810897400.plugin_api.ABP",
+            "should_reinitialize": false,
+            "types": "{\"plugin_api.ABP\":{\"caption\":\"Get a template\",\"fields\":{\"_p_url\":{\"ret_value\":\"text\",\"caption\":\"url\",\"sample_value\":\"https://ottho-sandbox.signrequest.com/api/v1/templates/20daf41b-de50-4bd1-9aac-1e09bd0861b3/\",\"path\":[\"url\"]},\"_p_name\":{\"ret_value\":\"text\",\"caption\":\"name\",\"sample_value\":\"test2\",\"path\":[\"name\"]},\"_p_uuid\":{\"ret_value\":\"text\",\"caption\":\"uuid\",\"sample_value\":\"20daf41b-de50-4bd1-9aac-1e09bd0861b3\",\"path\":[\"uuid\"]},\"_p_user.email\":{\"ret_value\":\"text\",\"caption\":\"user email\",\"sample_value\":\"ottho.tools@gmail.com\",\"path\":[\"user\",\"email\"]},\"_p_user.first_name\":{\"ret_value\":\"text\",\"caption\":\"user first_name\",\"sample_value\":\"Ottho\",\"path\":[\"user\",\"first_name\"]},\"_p_user.last_name\":{\"ret_value\":\"text\",\"caption\":\"user last_name\",\"sample_value\":\"\",\"path\":[\"user\",\"last_name\"]},\"_p_user.display_name\":{\"ret_value\":\"text\",\"caption\":\"user display_name\",\"sample_value\":\"Ottho (ottho.tools@gmail.com)\",\"path\":[\"user\",\"display_name\"]},\"_p_team.name\":{\"ret_value\":\"text\",\"caption\":\"team name\",\"sample_value\":\"Ottho Sandbox\",\"path\":[\"team\",\"name\"]},\"_p_team.subdomain\":{\"ret_value\":\"text\",\"caption\":\"team subdomain\",\"sample_value\":\"ottho-sandbox\",\"path\":[\"team\",\"subdomain\"]},\"_p_team.url\":{\"ret_value\":\"text\",\"caption\":\"team url\",\"sample_value\":\"https://ottho-sandbox.signrequest.com/api/v1/teams/ottho-sandbox/\",\"path\":[\"team\",\"url\"]},\"_p_who\":{\"ret_value\":\"text\",\"caption\":\"who\",\"sample_value\":\"o\",\"path\":[\"who\"]},\"_p_signers\":{\"ret_value\":\"text\",\"caption\":\"signers\",\"sample_value\":null,\"path\":[\"signers\"]}}}}",
+            "url": "https://[domain].signrequest.com/api/v1/templates/[uuid]/",
+            "url_params": {
+                "ABL": {
+                    "key": "domain",
+                    "private": true,
+                    "value": "ottho-app"
+                },
+                "ABU": {
+                    "key": "uuid",
+                    "private": true,
+                    "value": "20daf41b-de50-4bd1-9aac-1e09bd0861b3"
+                }
+            }
+        },
+        "ABc": {
+            "0": "A",
+            "1": "B",
+            "2": "b",
+            "body": "{\n  \"from_email\": \"<from_email>\",\n  \"from_email_name\": \"<from_email_name>\",\n  \"is_being_prepared\": <is_being_prepared>,\n  \"redirect_url\": \"<redirect_url>\",\n  \"redirect_url_declined\": \"<redirect_url_error>\",\n  \"disable_attachments\": false,\n  \"disable_text_signatures\": false,\n  \"disable_text\": false,\n  \"disable_date\": false,\n  \"disable_emails\": false,\n  \"disable_upload_signatures\": false,\n  \"subject\": \"<subject>\",\n  \"message\": \"<message>\",\n  \"who\": \"<who>\",\n  \"send_reminders\": <send_reminders?>,\n  \"signers\": [\n    {\n      \"email\": \"<1signer_email>\",\n      \"first_name\": \"<1signer_first_name>\",\n      \"last_name\": \"<1signer_last_name>\",\n      \"needs_to_sign\": <1signer_needs_to_sign>,\n      \"approve_only\": <1signer_approve_only>,\n      \"notify_only\": <1signer_notify_only>,\n      \"order\": <1order>,\n      \"language\": \"<1lang>\"\n    },\n          {\n      \"email\": \"<2signer_email>\",\n      \"first_name\": \"<2signer_first_name>\",\n      \"last_name\": \"<2signer_last_name>\",\n      \"needs_to_sign\": <2signer_needs_to_sign>,\n      \"approve_only\": <2signer_approve_only>,\n      \"notify_only\": <2signer_notify_only>,\n      \"order\": <2order>,\n      \"language\": \"<2lang>\"\n    }\n  ],\n\n  \"template\": \"<template>\",\n  \"auto_delete_days\": <auto_delete_days>,\n  \"auto_expire_days\": <auto_expire_days>\n}",
+            "body_params": {
+                "ADF": {
+                    "key": "from_email",
+                    "private": true,
+                    "value": ""
+                },
+                "ADG": {
+                    "key": "from_email_name",
+                    "private": true,
+                    "value": ""
+                },
+                "ADH": {
+                    "key": "is_being_prepared",
+                    "private": true,
+                    "value": ""
+                },
+                "ADI": {
+                    "key": "redirect_url",
+                    "private": true,
+                    "value": ""
+                },
+                "ADJ": {
+                    "key": "redirect_url_error",
+                    "private": true,
+                    "value": ""
+                },
+                "ADK": {
+                    "key": "subject",
+                    "private": true,
+                    "value": ""
+                },
+                "ADL": {
+                    "key": "message",
+                    "private": true,
+                    "value": ""
+                },
+                "ADM": {
+                    "key": "who",
+                    "private": true,
+                    "value": ""
+                },
+                "ADN": {
+                    "key": "send_reminders?",
+                    "private": true,
+                    "value": ""
+                },
+                "ADe": {
+                    "key": "template",
+                    "private": true,
+                    "value": ""
+                },
+                "ADf": {
+                    "key": "auto_delete_days",
+                    "private": true,
+                    "value": ""
+                },
+                "ADg": {
+                    "key": "auto_expire_days",
+                    "private": true,
+                    "value": ""
+                },
+                "ADi": {
+                    "key": "1signer_email",
+                    "private": true,
+                    "value": ""
+                },
+                "ADj": {
+                    "key": "1signer_first_name",
+                    "private": true,
+                    "value": ""
+                },
+                "ADl": {
+                    "key": "1signer_last_name",
+                    "private": true,
+                    "value": ""
+                },
+                "ADm": {
+                    "key": "1signer_needs_to_sign",
+                    "private": true,
+                    "value": ""
+                },
+                "ADn": {
+                    "key": "1signer_approve_only",
+                    "private": true,
+                    "value": ""
+                },
+                "ADo": {
+                    "key": "1signer_notify_only",
+                    "private": true,
+                    "value": ""
+                },
+                "ADq": {
+                    "key": "1order",
+                    "private": true,
+                    "value": ""
+                },
+                "ADr": {
+                    "key": "1lang",
+                    "private": true,
+                    "value": ""
+                },
+                "AEA": {
+                    "key": "2order",
+                    "private": true,
+                    "value": ""
+                },
+                "AEB": {
+                    "key": "2lang",
+                    "private": true,
+                    "value": ""
+                },
+                "AEC": {
+                    "key": "2signer_notify_only",
+                    "private": true,
+                    "value": ""
+                },
+                "AED": {
+                    "key": "2signer_approve_only",
+                    "private": true,
+                    "value": ""
+                },
+                "AEE": {
+                    "key": "2signer_needs_to_sign",
+                    "private": true,
+                    "value": ""
+                },
+                "AEF": {
+                    "key": "2signer_last_name",
+                    "private": true,
+                    "value": ""
+                },
+                "AEG": {
+                    "key": "2signer_first_name",
+                    "private": true,
+                    "value": ""
+                },
+                "AEH": {
+                    "key": "2signer_email",
+                    "private": true,
+                    "value": ""
+                }
+            },
+            "headers": {
+                "AAJ": {
+                    "key": "Content-Type",
+                    "private": true,
+                    "value": "application/json"
+                }
+            },
+            "initialized": true,
+            "method": "post",
+            "name": "Quick request (2 signers)",
+            "publish_as": "action",
+            "rank": 3,
+            "ret_value": "api.1611558936137x553319032810897400.plugin_api.ABc",
+            "should_reinitialize": true,
+            "types": "{\"plugin_api.ABc\":{\"caption\":\"Quick request (2 signers)\",\"fields\":{\"_p_from_email\":{\"ret_value\":\"text\",\"caption\":\"from_email\",\"sample_value\":\"vnihoul77@gmail.com\",\"path\":[\"from_email\"]},\"_p_from_email_name\":{\"ret_value\":\"text\",\"caption\":\"from_email_name\",\"sample_value\":\"Ottho\",\"path\":[\"from_email_name\"]},\"_p_is_being_prepared\":{\"ret_value\":\"boolean\",\"caption\":\"is_being_prepared\",\"sample_value\":false,\"path\":[\"is_being_prepared\"]},\"_p_prepare_url\":{\"ret_value\":\"text\",\"caption\":\"prepare_url\",\"sample_value\":null,\"path\":[\"prepare_url\"]},\"_p_redirect_url\":{\"ret_value\":\"text\",\"caption\":\"redirect_url\",\"sample_value\":\"https://app.ottho.tools?action=signature\",\"path\":[\"redirect_url\"]},\"_p_redirect_url_declined\":{\"ret_value\":\"text\",\"caption\":\"redirect_url_declined\",\"sample_value\":\"https://app.ottho.tools?action=signature\",\"path\":[\"redirect_url_declined\"]},\"_p_disable_attachments\":{\"ret_value\":\"boolean\",\"caption\":\"disable_attachments\",\"sample_value\":false,\"path\":[\"disable_attachments\"]},\"_p_disable_text_signatures\":{\"ret_value\":\"boolean\",\"caption\":\"disable_text_signatures\",\"sample_value\":false,\"path\":[\"disable_text_signatures\"]},\"_p_disable_text\":{\"ret_value\":\"boolean\",\"caption\":\"disable_text\",\"sample_value\":false,\"path\":[\"disable_text\"]},\"_p_disable_date\":{\"ret_value\":\"boolean\",\"caption\":\"disable_date\",\"sample_value\":false,\"path\":[\"disable_date\"]},\"_p_disable_emails\":{\"ret_value\":\"boolean\",\"caption\":\"disable_emails\",\"sample_value\":false,\"path\":[\"disable_emails\"]},\"_p_disable_upload_signatures\":{\"ret_value\":\"boolean\",\"caption\":\"disable_upload_signatures\",\"sample_value\":false,\"path\":[\"disable_upload_signatures\"]},\"_p_force_signature_color\":{\"ret_value\":\"text\",\"caption\":\"force_signature_color\",\"sample_value\":null,\"path\":[\"force_signature_color\"]},\"_p_disable_blockchain_proof\":{\"ret_value\":\"text\",\"caption\":\"disable_blockchain_proof\",\"sample_value\":null,\"path\":[\"disable_blockchain_proof\"]},\"_p_text_message_verification_locked\":{\"ret_value\":\"text\",\"caption\":\"text_message_verification_locked\",\"sample_value\":null,\"path\":[\"text_message_verification_locked\"]},\"_p_subject\":{\"ret_value\":\"text\",\"caption\":\"subject\",\"sample_value\":\"Test\",\"path\":[\"subject\"]},\"_p_message\":{\"ret_value\":\"text\",\"caption\":\"message\",\"sample_value\":\"test\",\"path\":[\"message\"]},\"_p_who\":{\"ret_value\":\"text\",\"caption\":\"who\",\"sample_value\":\"mo\",\"path\":[\"who\"]},\"_p_send_reminders\":{\"ret_value\":\"boolean\",\"caption\":\"send_reminders\",\"sample_value\":true,\"path\":[\"send_reminders\"]},\"_p_signers\":{\"ret_value\":\"list.api.1611558936137x553319032810897400.plugin_api.ABc.signers\",\"caption\":\"signers\",\"path\":[\"signers\"]},\"_p_uuid\":{\"ret_value\":\"text\",\"caption\":\"uuid\",\"sample_value\":\"58bd6c6f-ae15-4005-b581-abfd6ca4e6ba\",\"path\":[\"uuid\"]},\"_p_url\":{\"ret_value\":\"text\",\"caption\":\"url\",\"sample_value\":\"https://ottho-fr.signrequest.com/api/v1/signrequests/58bd6c6f-ae15-4005-b581-abfd6ca4e6ba/\",\"path\":[\"url\"]},\"_p_document\":{\"ret_value\":\"text\",\"caption\":\"document\",\"sample_value\":\"https://ottho-fr.signrequest.com/api/v1/documents/e2bf172f-19ad-482e-847b-61897c80d20b/\",\"path\":[\"document\"]},\"_p_integration\":{\"ret_value\":\"text\",\"caption\":\"integration\",\"sample_value\":null,\"path\":[\"integration\"]},\"_p_integration_data\":{\"ret_value\":\"text\",\"caption\":\"integration_data\",\"sample_value\":null,\"path\":[\"integration_data\"]},\"_p_name\":{\"ret_value\":\"text\",\"caption\":\"name\",\"sample_value\":null,\"path\":[\"name\"]},\"_p_external_id\":{\"ret_value\":\"text\",\"caption\":\"external_id\",\"sample_value\":null,\"path\":[\"external_id\"]},\"_p_file\":{\"ret_value\":\"text\",\"caption\":\"file\",\"sample_value\":null,\"path\":[\"file\"]},\"_p_file_from_url\":{\"ret_value\":\"text\",\"caption\":\"file_from_url\",\"sample_value\":null,\"path\":[\"file_from_url\"]},\"_p_events_callback_url\":{\"ret_value\":\"text\",\"caption\":\"events_callback_url\",\"sample_value\":null,\"path\":[\"events_callback_url\"]},\"_p_file_from_sf\":{\"ret_value\":\"text\",\"caption\":\"file_from_sf\",\"sample_value\":null,\"path\":[\"file_from_sf\"]},\"_p_auto_delete_days\":{\"ret_value\":\"number\",\"caption\":\"auto_delete_days\",\"sample_value\":null,\"path\":[\"auto_delete_days\"]},\"_p_auto_expire_days\":{\"ret_value\":\"number\",\"caption\":\"auto_expire_days\",\"sample_value\":null,\"path\":[\"auto_expire_days\"]}}},\"plugin_api.ABc.signers\":{\"caption\":\"Quick request (2 signers) signer\",\"fields\":{\"_p_email\":{\"ret_value\":\"text\",\"caption\":\"email\",\"sample_value\":\"vnihoul77@gmail.com\",\"path\":[\"email\"]},\"_p_display_name\":{\"ret_value\":\"text\",\"caption\":\"display_name\",\"sample_value\":\"Victor Nihoul (vnihoul77@gmail.com)\",\"path\":[\"display_name\"]},\"_p_first_name\":{\"ret_value\":\"text\",\"caption\":\"first_name\",\"sample_value\":\"Victor\",\"path\":[\"first_name\"]},\"_p_last_name\":{\"ret_value\":\"text\",\"caption\":\"last_name\",\"sample_value\":\"Nihoul\",\"path\":[\"last_name\"]},\"_p_email_viewed\":{\"ret_value\":\"boolean\",\"caption\":\"email_viewed\",\"sample_value\":false,\"path\":[\"email_viewed\"]},\"_p_viewed\":{\"ret_value\":\"boolean\",\"caption\":\"viewed\",\"sample_value\":false,\"path\":[\"viewed\"]},\"_p_signed\":{\"ret_value\":\"boolean\",\"caption\":\"signed\",\"sample_value\":false,\"path\":[\"signed\"]},\"_p_downloaded\":{\"ret_value\":\"boolean\",\"caption\":\"downloaded\",\"sample_value\":false,\"path\":[\"downloaded\"]},\"_p_signed_on\":{\"ret_value\":\"text\",\"caption\":\"signed_on\",\"sample_value\":null,\"path\":[\"signed_on\"]},\"_p_needs_to_sign\":{\"ret_value\":\"boolean\",\"caption\":\"needs_to_sign\",\"sample_value\":false,\"path\":[\"needs_to_sign\"]},\"_p_approve_only\":{\"ret_value\":\"boolean\",\"caption\":\"approve_only\",\"sample_value\":true,\"path\":[\"approve_only\"]},\"_p_notify_only\":{\"ret_value\":\"boolean\",\"caption\":\"notify_only\",\"sample_value\":false,\"path\":[\"notify_only\"]},\"_p_in_person\":{\"ret_value\":\"boolean\",\"caption\":\"in_person\",\"sample_value\":false,\"path\":[\"in_person\"]},\"_p_order\":{\"ret_value\":\"number\",\"caption\":\"order\",\"sample_value\":0,\"path\":[\"order\"]},\"_p_language\":{\"ret_value\":\"text\",\"caption\":\"language\",\"sample_value\":\"fr\",\"path\":[\"language\"]},\"_p_force_language\":{\"ret_value\":\"boolean\",\"caption\":\"force_language\",\"sample_value\":false,\"path\":[\"force_language\"]},\"_p_emailed\":{\"ret_value\":\"boolean\",\"caption\":\"emailed\",\"sample_value\":false,\"path\":[\"emailed\"]},\"_p_verify_phone_number\":{\"ret_value\":\"text\",\"caption\":\"verify_phone_number\",\"sample_value\":null,\"path\":[\"verify_phone_number\"]},\"_p_verify_bank_account\":{\"ret_value\":\"text\",\"caption\":\"verify_bank_account\",\"sample_value\":null,\"path\":[\"verify_bank_account\"]},\"_p_declined\":{\"ret_value\":\"boolean\",\"caption\":\"declined\",\"sample_value\":false,\"path\":[\"declined\"]},\"_p_declined_on\":{\"ret_value\":\"text\",\"caption\":\"declined_on\",\"sample_value\":null,\"path\":[\"declined_on\"]},\"_p_forwarded\":{\"ret_value\":\"boolean\",\"caption\":\"forwarded\",\"sample_value\":false,\"path\":[\"forwarded\"]},\"_p_forwarded_on\":{\"ret_value\":\"text\",\"caption\":\"forwarded_on\",\"sample_value\":null,\"path\":[\"forwarded_on\"]},\"_p_forwarded_to_email\":{\"ret_value\":\"text\",\"caption\":\"forwarded_to_email\",\"sample_value\":null,\"path\":[\"forwarded_to_email\"]},\"_p_forwarded_reason\":{\"ret_value\":\"text\",\"caption\":\"forwarded_reason\",\"sample_value\":null,\"path\":[\"forwarded_reason\"]},\"_p_message\":{\"ret_value\":\"text\",\"caption\":\"message\",\"sample_value\":null,\"path\":[\"message\"]},\"_p_embed_url_user_id\":{\"ret_value\":\"text\",\"caption\":\"embed_url_user_id\",\"sample_value\":null,\"path\":[\"embed_url_user_id\"]},\"_p_use_stamp_for_approve_only\":{\"ret_value\":\"boolean\",\"caption\":\"use_stamp_for_approve_only\",\"sample_value\":false,\"path\":[\"use_stamp_for_approve_only\"]},\"_p_embed_url\":{\"ret_value\":\"text\",\"caption\":\"embed_url\",\"sample_value\":null,\"path\":[\"embed_url\"]},\"_p_redirect_url\":{\"ret_value\":\"text\",\"caption\":\"redirect_url\",\"sample_value\":\"https://app.ottho.tools?action=signature\",\"path\":[\"redirect_url\"]},\"_p_redirect_url_declined\":{\"ret_value\":\"text\",\"caption\":\"redirect_url_declined\",\"sample_value\":\"https://app.ottho.tools?action=signature\",\"path\":[\"redirect_url_declined\"]},\"_p_after_document\":{\"ret_value\":\"text\",\"caption\":\"after_document\",\"sample_value\":null,\"path\":[\"after_document\"]}}}}",
+            "url": "https://[domain].signrequest.com/api/v1/signrequest-quick-create/",
+            "url_params": {
+                "ABW": {
+                    "key": "domain",
+                    "private": true,
+                    "value": "ottho-fr"
+                }
+            }
+        },
+        "ABs": {
+            "initialized": true,
+            "method": "get",
+            "name": "Get a document",
+            "publish_as": "action",
+            "rank": 6,
+            "ret_value": "api.1611558936137x553319032810897400.plugin_api.ABs",
+            "should_reinitialize": false,
+            "types": "{\"plugin_api.ABs\":{\"caption\":\"Get a document\",\"fields\":{\"_p_url\":{\"ret_value\":\"text\",\"caption\":\"url\",\"sample_value\":\"https://ottho-fr.signrequest.com/api/v1/documents/30525bd8-693b-41ce-b040-7abd272d07cc/\",\"path\":[\"url\"]},\"_p_team.name\":{\"ret_value\":\"text\",\"caption\":\"team name\",\"sample_value\":\"Ottho FR\",\"path\":[\"team\",\"name\"]},\"_p_team.subdomain\":{\"ret_value\":\"text\",\"caption\":\"team subdomain\",\"sample_value\":\"ottho-fr\",\"path\":[\"team\",\"subdomain\"]},\"_p_team.url\":{\"ret_value\":\"text\",\"caption\":\"team url\",\"sample_value\":\"https://ottho-fr.signrequest.com/api/v1/teams/ottho-fr/\",\"path\":[\"team\",\"url\"]},\"_p_uuid\":{\"ret_value\":\"text\",\"caption\":\"uuid\",\"sample_value\":\"30525bd8-693b-41ce-b040-7abd272d07cc\",\"path\":[\"uuid\"]},\"_p_user\":{\"ret_value\":\"text\",\"caption\":\"user\",\"sample_value\":null,\"path\":[\"user\"]},\"_p_file_as_pdf\":{\"ret_value\":\"text\",\"caption\":\"file_as_pdf\",\"sample_value\":\"https://signrequest-pro.s3.amazonaws.com/original_pdfs/2021/02/06/58cb986b97f1c987a48a460fa2b80b33f1a1e7a3/edm_la_0_20210103_2120.pdf?AWSAccessKeyId=AKIAIFC5SSMNRPLY3AMQ&Signature=q2QWDvHQBa5XYGyevigkYKv3Xo8%3D&Expires=1612606443\",\"path\":[\"file_as_pdf\"]},\"_p_name\":{\"ret_value\":\"text\",\"caption\":\"name\",\"sample_value\":\"edm_la_0_20210103_2120.pdf\",\"path\":[\"name\"]},\"_p_external_id\":{\"ret_value\":\"text\",\"caption\":\"external_id\",\"sample_value\":null,\"path\":[\"external_id\"]},\"_p_file\":{\"ret_value\":\"text\",\"caption\":\"file\",\"sample_value\":\"https://signrequest-pro.s3.amazonaws.com/docs/2021/02/06/dc151b3fe17034ba60d3bd0a74d9564177a96602/edm_la_0_20210103_2120.pdf?AWSAccessKeyId=AKIAIFC5SSMNRPLY3AMQ&Signature=lGeLeWxYCFhp5lLPVD%2BXbVXVseI%3D&Expires=1612606443\",\"path\":[\"file\"]},\"_p_file_from_url\":{\"ret_value\":\"text\",\"caption\":\"file_from_url\",\"sample_value\":null,\"path\":[\"file_from_url\"]},\"_p_events_callback_url\":{\"ret_value\":\"text\",\"caption\":\"events_callback_url\",\"sample_value\":null,\"path\":[\"events_callback_url\"]},\"_p_template\":{\"ret_value\":\"text\",\"caption\":\"template\",\"sample_value\":\"https://ottho-fr.signrequest.com/api/v1/templates/2cd86cf6-7902-49e8-875c-dfe99fb89e9f/\",\"path\":[\"template\"]},\"_p_file_from_sf\":{\"ret_value\":\"text\",\"caption\":\"file_from_sf\",\"sample_value\":null,\"path\":[\"file_from_sf\"]},\"_p_auto_delete_days\":{\"ret_value\":\"number\",\"caption\":\"auto_delete_days\",\"sample_value\":10,\"path\":[\"auto_delete_days\"]},\"_p_auto_expire_days\":{\"ret_value\":\"number\",\"caption\":\"auto_expire_days\",\"sample_value\":1,\"path\":[\"auto_expire_days\"]},\"_p_pdf\":{\"ret_value\":\"text\",\"caption\":\"pdf\",\"sample_value\":\"https://signrequest-pro.s3.amazonaws.com/pdfs/2021/02/06/1ede6c86580b45b3ebb1e1a6c5203fe2ae2fc143/edm_la_0_20210103_2120.pdf?AWSAccessKeyId=AKIAIFC5SSMNRPLY3AMQ&Signature=fBI1QMw1wK2e1VHTASQgVwONK1E%3D&Expires=1612606443\",\"path\":[\"pdf\"]},\"_p_status\":{\"ret_value\":\"text\",\"caption\":\"status\",\"sample_value\":\"vi\",\"path\":[\"status\"]},\"_p_signrequest.from_email\":{\"ret_value\":\"text\",\"caption\":\"signrequest from_email\",\"sample_value\":\"ottho.tools@gmail.com\",\"path\":[\"signrequest\",\"from_email\"]},\"_p_signrequest.from_email_name\":{\"ret_value\":\"text\",\"caption\":\"signrequest from_email_name\",\"sample_value\":null,\"path\":[\"signrequest\",\"from_email_name\"]},\"_p_signrequest.is_being_prepared\":{\"ret_value\":\"boolean\",\"caption\":\"signrequest is_being_prepared\",\"sample_value\":false,\"path\":[\"signrequest\",\"is_being_prepared\"]},\"_p_signrequest.prepare_url\":{\"ret_value\":\"text\",\"caption\":\"signrequest prepare_url\",\"sample_value\":null,\"path\":[\"signrequest\",\"prepare_url\"]},\"_p_signrequest.redirect_url\":{\"ret_value\":\"text\",\"caption\":\"signrequest redirect_url\",\"sample_value\":null,\"path\":[\"signrequest\",\"redirect_url\"]},\"_p_signrequest.redirect_url_declined\":{\"ret_value\":\"text\",\"caption\":\"signrequest redirect_url_declined\",\"sample_value\":null,\"path\":[\"signrequest\",\"redirect_url_declined\"]},\"_p_signrequest.disable_attachments\":{\"ret_value\":\"boolean\",\"caption\":\"signrequest disable_attachments\",\"sample_value\":false,\"path\":[\"signrequest\",\"disable_attachments\"]},\"_p_signrequest.disable_text_signatures\":{\"ret_value\":\"boolean\",\"caption\":\"signrequest disable_text_signatures\",\"sample_value\":false,\"path\":[\"signrequest\",\"disable_text_signatures\"]},\"_p_signrequest.disable_text\":{\"ret_value\":\"boolean\",\"caption\":\"signrequest disable_text\",\"sample_value\":false,\"path\":[\"signrequest\",\"disable_text\"]},\"_p_signrequest.disable_date\":{\"ret_value\":\"boolean\",\"caption\":\"signrequest disable_date\",\"sample_value\":false,\"path\":[\"signrequest\",\"disable_date\"]},\"_p_signrequest.disable_emails\":{\"ret_value\":\"boolean\",\"caption\":\"signrequest disable_emails\",\"sample_value\":false,\"path\":[\"signrequest\",\"disable_emails\"]},\"_p_signrequest.disable_upload_signatures\":{\"ret_value\":\"boolean\",\"caption\":\"signrequest disable_upload_signatures\",\"sample_value\":false,\"path\":[\"signrequest\",\"disable_upload_signatures\"]},\"_p_signrequest.force_signature_color\":{\"ret_value\":\"text\",\"caption\":\"signrequest force_signature_color\",\"sample_value\":null,\"path\":[\"signrequest\",\"force_signature_color\"]},\"_p_signrequest.disable_blockchain_proof\":{\"ret_value\":\"text\",\"caption\":\"signrequest disable_blockchain_proof\",\"sample_value\":null,\"path\":[\"signrequest\",\"disable_blockchain_proof\"]},\"_p_signrequest.text_message_verification_locked\":{\"ret_value\":\"text\",\"caption\":\"signrequest text_message_verification_locked\",\"sample_value\":null,\"path\":[\"signrequest\",\"text_message_verification_locked\"]},\"_p_signrequest.subject\":{\"ret_value\":\"text\",\"caption\":\"signrequest subject\",\"sample_value\":null,\"path\":[\"signrequest\",\"subject\"]},\"_p_signrequest.message\":{\"ret_value\":\"text\",\"caption\":\"signrequest message\",\"sample_value\":\"Please sign this document.\\n\\nKind regards,\\n\\nOttho - Victor Nihoul (vnihoul77@gmail.com)\",\"path\":[\"signrequest\",\"message\"]},\"_p_signrequest.who\":{\"ret_value\":\"text\",\"caption\":\"signrequest who\",\"sample_value\":\"o\",\"path\":[\"signrequest\",\"who\"]},\"_p_signrequest.send_reminders\":{\"ret_value\":\"boolean\",\"caption\":\"signrequest send_reminders\",\"sample_value\":false,\"path\":[\"signrequest\",\"send_reminders\"]},\"_p_signrequest.signers\":{\"ret_value\":\"list.api.1611558936137x553319032810897400.plugin_api.ABs.signrequest.signers\",\"caption\":\"signrequest signers\",\"path\":[\"signrequest\",\"signers\"]},\"_p_signrequest.uuid\":{\"ret_value\":\"text\",\"caption\":\"signrequest uuid\",\"sample_value\":\"6bb5279d-7a43-4d3d-999a-9c6c421f1d1a\",\"path\":[\"signrequest\",\"uuid\"]},\"_p_api_used\":{\"ret_value\":\"boolean\",\"caption\":\"api_used\",\"sample_value\":true,\"path\":[\"api_used\"]},\"_p_signing_log.pdf\":{\"ret_value\":\"text\",\"caption\":\"signing_log pdf\",\"sample_value\":\"https://signrequest-pro.s3.amazonaws.com/logs/2021/02/06/316831e7dd75ce875483eb4a45a47cf6a10553cf/edm_la_0_20210103_2120_signing_log.pdf?AWSAccessKeyId=AKIAIFC5SSMNRPLY3AMQ&Signature=ceTDOOQtAw7OwyicjZkAHgbwGdQ%3D&Expires=1612606443\",\"path\":[\"signing_log\",\"pdf\"]},\"_p_signing_log.security_hash\":{\"ret_value\":\"text\",\"caption\":\"signing_log security_hash\",\"sample_value\":\"6dca514f68fd9db5369bbde29be68dd47453fa0035c8733076ec6652bc8d7fd0\",\"path\":[\"signing_log\",\"security_hash\"]},\"_p_security_hash\":{\"ret_value\":\"text\",\"caption\":\"security_hash\",\"sample_value\":\"d31dbf678624d15125ee179437e74fc29c5201567ff6c84a184e7deace62a48e\",\"path\":[\"security_hash\"]},\"_p_auto_delete_after\":{\"ret_value\":\"text\",\"caption\":\"auto_delete_after\",\"sample_value\":null,\"path\":[\"auto_delete_after\"]},\"_p_sandbox\":{\"ret_value\":\"boolean\",\"caption\":\"sandbox\",\"sample_value\":true,\"path\":[\"sandbox\"]},\"_p_auto_expire_after\":{\"ret_value\":\"text\",\"caption\":\"auto_expire_after\",\"sample_value\":\"2021-02-07T10:01:42.098262Z\",\"path\":[\"auto_expire_after\"]},\"_p_processing\":{\"ret_value\":\"boolean\",\"caption\":\"processing\",\"sample_value\":false,\"path\":[\"processing\"]}}},\"plugin_api.ABs.signrequest.signers\":{\"caption\":\"Get a document signrequest signer\",\"fields\":{\"_p_email\":{\"ret_value\":\"text\",\"caption\":\"email\",\"sample_value\":\"ottho.tools@gmail.com\",\"path\":[\"email\"]},\"_p_display_name\":{\"ret_value\":\"text\",\"caption\":\"display_name\",\"sample_value\":\"Ottho (ottho.tools@gmail.com)\",\"path\":[\"display_name\"]},\"_p_first_name\":{\"ret_value\":\"text\",\"caption\":\"first_name\",\"sample_value\":\"Ottho\",\"path\":[\"first_name\"]},\"_p_last_name\":{\"ret_value\":\"text\",\"caption\":\"last_name\",\"sample_value\":\"\",\"path\":[\"last_name\"]},\"_p_email_viewed\":{\"ret_value\":\"boolean\",\"caption\":\"email_viewed\",\"sample_value\":false,\"path\":[\"email_viewed\"]},\"_p_viewed\":{\"ret_value\":\"boolean\",\"caption\":\"viewed\",\"sample_value\":false,\"path\":[\"viewed\"]},\"_p_signed\":{\"ret_value\":\"boolean\",\"caption\":\"signed\",\"sample_value\":false,\"path\":[\"signed\"]},\"_p_downloaded\":{\"ret_value\":\"boolean\",\"caption\":\"downloaded\",\"sample_value\":false,\"path\":[\"downloaded\"]},\"_p_signed_on\":{\"ret_value\":\"text\",\"caption\":\"signed_on\",\"sample_value\":\"2021-02-06T10:02:08.924225Z\",\"path\":[\"signed_on\"]},\"_p_needs_to_sign\":{\"ret_value\":\"boolean\",\"caption\":\"needs_to_sign\",\"sample_value\":true,\"path\":[\"needs_to_sign\"]},\"_p_approve_only\":{\"ret_value\":\"boolean\",\"caption\":\"approve_only\",\"sample_value\":true,\"path\":[\"approve_only\"]},\"_p_notify_only\":{\"ret_value\":\"boolean\",\"caption\":\"notify_only\",\"sample_value\":false,\"path\":[\"notify_only\"]},\"_p_in_person\":{\"ret_value\":\"boolean\",\"caption\":\"in_person\",\"sample_value\":false,\"path\":[\"in_person\"]},\"_p_order\":{\"ret_value\":\"number\",\"caption\":\"order\",\"sample_value\":1,\"path\":[\"order\"]},\"_p_language\":{\"ret_value\":\"text\",\"caption\":\"language\",\"sample_value\":\"fr\",\"path\":[\"language\"]},\"_p_force_language\":{\"ret_value\":\"boolean\",\"caption\":\"force_language\",\"sample_value\":false,\"path\":[\"force_language\"]},\"_p_emailed\":{\"ret_value\":\"boolean\",\"caption\":\"emailed\",\"sample_value\":false,\"path\":[\"emailed\"]},\"_p_verify_phone_number\":{\"ret_value\":\"text\",\"caption\":\"verify_phone_number\",\"sample_value\":null,\"path\":[\"verify_phone_number\"]},\"_p_verify_bank_account\":{\"ret_value\":\"text\",\"caption\":\"verify_bank_account\",\"sample_value\":null,\"path\":[\"verify_bank_account\"]},\"_p_declined\":{\"ret_value\":\"boolean\",\"caption\":\"declined\",\"sample_value\":false,\"path\":[\"declined\"]},\"_p_declined_on\":{\"ret_value\":\"text\",\"caption\":\"declined_on\",\"sample_value\":null,\"path\":[\"declined_on\"]},\"_p_forwarded\":{\"ret_value\":\"boolean\",\"caption\":\"forwarded\",\"sample_value\":false,\"path\":[\"forwarded\"]},\"_p_forwarded_on\":{\"ret_value\":\"text\",\"caption\":\"forwarded_on\",\"sample_value\":null,\"path\":[\"forwarded_on\"]},\"_p_forwarded_to_email\":{\"ret_value\":\"text\",\"caption\":\"forwarded_to_email\",\"sample_value\":null,\"path\":[\"forwarded_to_email\"]},\"_p_forwarded_reason\":{\"ret_value\":\"text\",\"caption\":\"forwarded_reason\",\"sample_value\":null,\"path\":[\"forwarded_reason\"]},\"_p_message\":{\"ret_value\":\"text\",\"caption\":\"message\",\"sample_value\":null,\"path\":[\"message\"]},\"_p_embed_url_user_id\":{\"ret_value\":\"text\",\"caption\":\"embed_url_user_id\",\"sample_value\":\"admin\",\"path\":[\"embed_url_user_id\"]},\"_p_use_stamp_for_approve_only\":{\"ret_value\":\"boolean\",\"caption\":\"use_stamp_for_approve_only\",\"sample_value\":false,\"path\":[\"use_stamp_for_approve_only\"]},\"_p_embed_url\":{\"ret_value\":\"text\",\"caption\":\"embed_url\",\"sample_value\":\"https://ottho-fr.signrequest.com/r/document/30525bd8-693b-41ce-b040-7abd272d07cc/12c97ba8f4ab82a707413bee4d94ca0212011658266f381acd41b6f5f4c544e7/\",\"path\":[\"embed_url\"]},\"_p_redirect_url\":{\"ret_value\":\"text\",\"caption\":\"redirect_url\",\"sample_value\":\"https://app.ottho.tools/version-test/?action=signature\",\"path\":[\"redirect_url\"]},\"_p_redirect_url_declined\":{\"ret_value\":\"text\",\"caption\":\"redirect_url_declined\",\"sample_value\":null,\"path\":[\"redirect_url_declined\"]},\"_p_after_document\":{\"ret_value\":\"text\",\"caption\":\"after_document\",\"sample_value\":null,\"path\":[\"after_document\"]},\"_p_inputs\":{\"ret_value\":\"list.api.1611558936137x553319032810897400.plugin_api.ABs.inputs\",\"caption\":\"inputs\",\"path\":[\"inputs\"]}}},\"plugin_api.ABs.inputs\":{\"caption\":\"Get a document input\",\"fields\":{\"_p_type\":{\"ret_value\":\"text\",\"caption\":\"type\",\"sample_value\":\"s\",\"path\":[\"type\"]},\"_p_page_index\":{\"ret_value\":\"number\",\"caption\":\"page_index\",\"sample_value\":0,\"path\":[\"page_index\"]},\"_p_text\":{\"ret_value\":\"text\",\"caption\":\"text\",\"sample_value\":\"\",\"path\":[\"text\"]},\"_p_checkbox_value\":{\"ret_value\":\"text\",\"caption\":\"checkbox_value\",\"sample_value\":null,\"path\":[\"checkbox_value\"]},\"_p_date_value\":{\"ret_value\":\"text\",\"caption\":\"date_value\",\"sample_value\":null,\"path\":[\"date_value\"]},\"_p_external_id\":{\"ret_value\":\"text\",\"caption\":\"external_id\",\"sample_value\":null,\"path\":[\"external_id\"]},\"_p_placeholder_uuid\":{\"ret_value\":\"text\",\"caption\":\"placeholder_uuid\",\"sample_value\":\"66c6aacc-cc63-482f-9c4c-8681833cae7e\",\"path\":[\"placeholder_uuid\"]}}}}",
+            "url": "https://[domain].signrequest.com/api/v1/documents/[uuid]/",
+            "url_params": {
+                "ACB": {
+                    "key": "domain",
+                    "private": true,
+                    "value": "ottho-fr"
+                },
+                "ACC": {
+                    "key": "uuid",
+                    "private": true,
+                    "value": "30525bd8-693b-41ce-b040-7abd272d07cc"
+                }
+            }
+        },
+        "ACF": {
+            "0": "A",
+            "1": "C",
+            "2": "E",
+            "initialized": true,
+            "method": "get",
+            "name": "Get a request",
+            "publish_as": "data",
+            "rank": 8,
+            "ret_value": "api.1611558936137x553319032810897400.plugin_api.ACF",
+            "should_reinitialize": true,
+            "types": "{\"plugin_api.ACF\":{\"caption\":\"Get a request\",\"fields\":{\"_p_from_email\":{\"ret_value\":\"text\",\"caption\":\"from_email\",\"sample_value\":\"hello@ottho.fr\",\"path\":[\"from_email\"]},\"_p_from_email_name\":{\"ret_value\":\"text\",\"caption\":\"from_email_name\",\"sample_value\":\"Ottho\",\"path\":[\"from_email_name\"]},\"_p_is_being_prepared\":{\"ret_value\":\"boolean\",\"caption\":\"is_being_prepared\",\"sample_value\":false,\"path\":[\"is_being_prepared\"]},\"_p_prepare_url\":{\"ret_value\":\"text\",\"caption\":\"prepare_url\",\"sample_value\":null,\"path\":[\"prepare_url\"]},\"_p_redirect_url\":{\"ret_value\":\"text\",\"caption\":\"redirect_url\",\"sample_value\":\"https://app.ottho.tools?action=signature\",\"path\":[\"redirect_url\"]},\"_p_redirect_url_declined\":{\"ret_value\":\"text\",\"caption\":\"redirect_url_declined\",\"sample_value\":\"https://app.ottho.tools?action=signature\",\"path\":[\"redirect_url_declined\"]},\"_p_disable_attachments\":{\"ret_value\":\"boolean\",\"caption\":\"disable_attachments\",\"sample_value\":false,\"path\":[\"disable_attachments\"]},\"_p_disable_text_signatures\":{\"ret_value\":\"boolean\",\"caption\":\"disable_text_signatures\",\"sample_value\":false,\"path\":[\"disable_text_signatures\"]},\"_p_disable_text\":{\"ret_value\":\"boolean\",\"caption\":\"disable_text\",\"sample_value\":false,\"path\":[\"disable_text\"]},\"_p_disable_date\":{\"ret_value\":\"boolean\",\"caption\":\"disable_date\",\"sample_value\":false,\"path\":[\"disable_date\"]},\"_p_disable_emails\":{\"ret_value\":\"boolean\",\"caption\":\"disable_emails\",\"sample_value\":false,\"path\":[\"disable_emails\"]},\"_p_disable_upload_signatures\":{\"ret_value\":\"boolean\",\"caption\":\"disable_upload_signatures\",\"sample_value\":false,\"path\":[\"disable_upload_signatures\"]},\"_p_force_signature_color\":{\"ret_value\":\"text\",\"caption\":\"force_signature_color\",\"sample_value\":null,\"path\":[\"force_signature_color\"]},\"_p_disable_blockchain_proof\":{\"ret_value\":\"text\",\"caption\":\"disable_blockchain_proof\",\"sample_value\":null,\"path\":[\"disable_blockchain_proof\"]},\"_p_text_message_verification_locked\":{\"ret_value\":\"text\",\"caption\":\"text_message_verification_locked\",\"sample_value\":null,\"path\":[\"text_message_verification_locked\"]},\"_p_subject\":{\"ret_value\":\"text\",\"caption\":\"subject\",\"sample_value\":\"Test\",\"path\":[\"subject\"]},\"_p_message\":{\"ret_value\":\"text\",\"caption\":\"message\",\"sample_value\":\"test\",\"path\":[\"message\"]},\"_p_who\":{\"ret_value\":\"text\",\"caption\":\"who\",\"sample_value\":\"o\",\"path\":[\"who\"]},\"_p_send_reminders\":{\"ret_value\":\"boolean\",\"caption\":\"send_reminders\",\"sample_value\":true,\"path\":[\"send_reminders\"]},\"_p_signers\":{\"ret_value\":\"list.api.1611558936137x553319032810897400.plugin_api.ACF.signers\",\"caption\":\"signers\",\"path\":[\"signers\"]},\"_p_uuid\":{\"ret_value\":\"text\",\"caption\":\"uuid\",\"sample_value\":\"6806b6be-a839-4196-9235-b1a539dc574f\",\"path\":[\"uuid\"]},\"_p_url\":{\"ret_value\":\"text\",\"caption\":\"url\",\"sample_value\":\"https://ottho-fr.signrequest.com/api/v1/signrequests/6806b6be-a839-4196-9235-b1a539dc574f/\",\"path\":[\"url\"]},\"_p_document\":{\"ret_value\":\"text\",\"caption\":\"document\",\"sample_value\":\"https://ottho-fr.signrequest.com/api/v1/documents/d4934a6c-4e1c-499f-83b9-da84907277fb/\",\"path\":[\"document\"]},\"_p_integration\":{\"ret_value\":\"text\",\"caption\":\"integration\",\"sample_value\":null,\"path\":[\"integration\"]},\"_p_integration_data\":{\"ret_value\":\"text\",\"caption\":\"integration_data\",\"sample_value\":null,\"path\":[\"integration_data\"]}}},\"plugin_api.ACF.signers\":{\"caption\":\"Get a request signer\",\"fields\":{\"_p_email\":{\"ret_value\":\"text\",\"caption\":\"email\",\"sample_value\":\"hello@ottho.fr\",\"path\":[\"email\"]},\"_p_display_name\":{\"ret_value\":\"text\",\"caption\":\"display_name\",\"sample_value\":\"Ottho Tools (hello@ottho.fr)\",\"path\":[\"display_name\"]},\"_p_first_name\":{\"ret_value\":\"text\",\"caption\":\"first_name\",\"sample_value\":\"Ottho\",\"path\":[\"first_name\"]},\"_p_last_name\":{\"ret_value\":\"text\",\"caption\":\"last_name\",\"sample_value\":\"Tools\",\"path\":[\"last_name\"]},\"_p_email_viewed\":{\"ret_value\":\"boolean\",\"caption\":\"email_viewed\",\"sample_value\":false,\"path\":[\"email_viewed\"]},\"_p_viewed\":{\"ret_value\":\"boolean\",\"caption\":\"viewed\",\"sample_value\":false,\"path\":[\"viewed\"]},\"_p_signed\":{\"ret_value\":\"boolean\",\"caption\":\"signed\",\"sample_value\":false,\"path\":[\"signed\"]},\"_p_downloaded\":{\"ret_value\":\"boolean\",\"caption\":\"downloaded\",\"sample_value\":false,\"path\":[\"downloaded\"]},\"_p_signed_on\":{\"ret_value\":\"text\",\"caption\":\"signed_on\",\"sample_value\":\"2021-02-06T06:40:57.525999Z\",\"path\":[\"signed_on\"]},\"_p_needs_to_sign\":{\"ret_value\":\"boolean\",\"caption\":\"needs_to_sign\",\"sample_value\":false,\"path\":[\"needs_to_sign\"]},\"_p_approve_only\":{\"ret_value\":\"boolean\",\"caption\":\"approve_only\",\"sample_value\":false,\"path\":[\"approve_only\"]},\"_p_notify_only\":{\"ret_value\":\"boolean\",\"caption\":\"notify_only\",\"sample_value\":false,\"path\":[\"notify_only\"]},\"_p_in_person\":{\"ret_value\":\"boolean\",\"caption\":\"in_person\",\"sample_value\":false,\"path\":[\"in_person\"]},\"_p_order\":{\"ret_value\":\"number\",\"caption\":\"order\",\"sample_value\":0,\"path\":[\"order\"]},\"_p_language\":{\"ret_value\":\"text\",\"caption\":\"language\",\"sample_value\":\"fr\",\"path\":[\"language\"]},\"_p_force_language\":{\"ret_value\":\"boolean\",\"caption\":\"force_language\",\"sample_value\":false,\"path\":[\"force_language\"]},\"_p_emailed\":{\"ret_value\":\"boolean\",\"caption\":\"emailed\",\"sample_value\":false,\"path\":[\"emailed\"]},\"_p_verify_phone_number\":{\"ret_value\":\"text\",\"caption\":\"verify_phone_number\",\"sample_value\":null,\"path\":[\"verify_phone_number\"]},\"_p_verify_bank_account\":{\"ret_value\":\"text\",\"caption\":\"verify_bank_account\",\"sample_value\":null,\"path\":[\"verify_bank_account\"]},\"_p_declined\":{\"ret_value\":\"boolean\",\"caption\":\"declined\",\"sample_value\":false,\"path\":[\"declined\"]},\"_p_declined_on\":{\"ret_value\":\"text\",\"caption\":\"declined_on\",\"sample_value\":null,\"path\":[\"declined_on\"]},\"_p_forwarded\":{\"ret_value\":\"boolean\",\"caption\":\"forwarded\",\"sample_value\":false,\"path\":[\"forwarded\"]},\"_p_forwarded_on\":{\"ret_value\":\"text\",\"caption\":\"forwarded_on\",\"sample_value\":null,\"path\":[\"forwarded_on\"]},\"_p_forwarded_to_email\":{\"ret_value\":\"text\",\"caption\":\"forwarded_to_email\",\"sample_value\":null,\"path\":[\"forwarded_to_email\"]},\"_p_forwarded_reason\":{\"ret_value\":\"text\",\"caption\":\"forwarded_reason\",\"sample_value\":null,\"path\":[\"forwarded_reason\"]},\"_p_message\":{\"ret_value\":\"text\",\"caption\":\"message\",\"sample_value\":null,\"path\":[\"message\"]},\"_p_embed_url_user_id\":{\"ret_value\":\"text\",\"caption\":\"embed_url_user_id\",\"sample_value\":null,\"path\":[\"embed_url_user_id\"]},\"_p_use_stamp_for_approve_only\":{\"ret_value\":\"boolean\",\"caption\":\"use_stamp_for_approve_only\",\"sample_value\":false,\"path\":[\"use_stamp_for_approve_only\"]},\"_p_embed_url\":{\"ret_value\":\"text\",\"caption\":\"embed_url\",\"sample_value\":null,\"path\":[\"embed_url\"]},\"_p_redirect_url\":{\"ret_value\":\"text\",\"caption\":\"redirect_url\",\"sample_value\":\"https://app.ottho.tools?action=signature\",\"path\":[\"redirect_url\"]},\"_p_redirect_url_declined\":{\"ret_value\":\"text\",\"caption\":\"redirect_url_declined\",\"sample_value\":\"https://app.ottho.tools?action=signature\",\"path\":[\"redirect_url_declined\"]},\"_p_after_document\":{\"ret_value\":\"text\",\"caption\":\"after_document\",\"sample_value\":null,\"path\":[\"after_document\"]},\"_p_inputs\":{\"ret_value\":\"list.api.1611558936137x553319032810897400.plugin_api.ACF.inputs\",\"caption\":\"inputs\",\"path\":[\"inputs\"]}}},\"plugin_api.ACF.inputs\":{\"caption\":\"Get a request input\",\"fields\":{\"_p_type\":{\"ret_value\":\"text\",\"caption\":\"type\",\"sample_value\":\"s\",\"path\":[\"type\"]},\"_p_page_index\":{\"ret_value\":\"number\",\"caption\":\"page_index\",\"sample_value\":0,\"path\":[\"page_index\"]},\"_p_text\":{\"ret_value\":\"text\",\"caption\":\"text\",\"sample_value\":\"\",\"path\":[\"text\"]},\"_p_checkbox_value\":{\"ret_value\":\"text\",\"caption\":\"checkbox_value\",\"sample_value\":null,\"path\":[\"checkbox_value\"]},\"_p_date_value\":{\"ret_value\":\"text\",\"caption\":\"date_value\",\"sample_value\":null,\"path\":[\"date_value\"]},\"_p_external_id\":{\"ret_value\":\"text\",\"caption\":\"external_id\",\"sample_value\":null,\"path\":[\"external_id\"]},\"_p_placeholder_uuid\":{\"ret_value\":\"text\",\"caption\":\"placeholder_uuid\",\"sample_value\":\"5fc0141f-eb8e-49be-8616-371c3588682e\",\"path\":[\"placeholder_uuid\"]}}}}",
+            "url": "https://[domain].signrequest.com/api/v1/signrequests/[uuid]/",
+            "url_params": {
+                "ACB": {
+                    "key": "domain",
+                    "private": true,
+                    "value": "ottho-fr"
+                },
+                "ACC": {
+                    "key": "uuid",
+                    "private": true,
+                    "value": "6806b6be-a839-4196-9235-b1a539dc574f"
+                }
+            }
+        },
+        "ACK": {
+            "0": "A",
+            "1": "C",
+            "2": "J",
+            "initialized": true,
+            "method": "post",
+            "name": "Resend a request",
+            "publish_as": "action",
+            "rank": 10,
+            "ret_value": "api.1611558936137x553319032810897400.plugin_api.ACK",
+            "should_reinitialize": true,
+            "types": "{\"plugin_api.ACK\":{\"caption\":\"Resend a request\",\"fields\":{\"_p_detail\":{\"ret_value\":\"text\",\"caption\":\"detail\",\"sample_value\":\"OK\",\"path\":[\"detail\"]}}}}",
+            "url": "https://[domain].signrequest.com/api/v1/signrequests/[uuid]/resend_signrequest_email/",
+            "url_params": {
+                "ACB": {
+                    "key": "domain",
+                    "private": true,
+                    "value": "ottho-fr"
+                },
+                "ACC": {
+                    "key": "uuid",
+                    "private": true,
+                    "value": "27b38132-68c6-46cf-a4d6-5585db70ece6"
+                }
+            }
+        },
+        "ACL": {
+            "initialized": true,
+            "method": "get",
+            "name": "Get all webhooks",
+            "publish_as": "data",
+            "rank": 11,
+            "ret_value": "api.1611558936137x553319032810897400.plugin_api.ACL",
+            "should_reinitialize": true,
+            "types": "{\"plugin_api.ACL\":{\"caption\":\"Get all webhook\",\"fields\":{\"_p_count\":{\"ret_value\":\"number\",\"caption\":\"count\",\"sample_value\":2,\"path\":[\"count\"]},\"_p_next\":{\"ret_value\":\"text\",\"caption\":\"next\",\"sample_value\":null,\"path\":[\"next\"]},\"_p_previous\":{\"ret_value\":\"text\",\"caption\":\"previous\",\"sample_value\":null,\"path\":[\"previous\"]},\"_p_results\":{\"ret_value\":\"list.api.1611558936137x553319032810897400.plugin_api.ACL.results\",\"caption\":\"results\",\"path\":[\"results\"]}}},\"plugin_api.ACL.results\":{\"caption\":\"Get all webhooks result\",\"fields\":{\"_p_url\":{\"ret_value\":\"text\",\"caption\":\"url\",\"sample_value\":\"https://ottho-sandbox.signrequest.com/api/v1/webhooks/74583650-66f0-4913-8250-7e8c76a99487/\",\"path\":[\"url\"]},\"_p_uuid\":{\"ret_value\":\"text\",\"caption\":\"uuid\",\"sample_value\":\"74583650-66f0-4913-8250-7e8c76a99487\",\"path\":[\"uuid\"]},\"_p_name\":{\"ret_value\":\"text\",\"caption\":\"name\",\"sample_value\":\"test\",\"path\":[\"name\"]},\"_p_event_type\":{\"ret_value\":\"text\",\"caption\":\"event_type\",\"sample_value\":\"viewed\",\"path\":[\"event_type\"]},\"_p_callback_url\":{\"ret_value\":\"text\",\"caption\":\"callback_url\",\"sample_value\":\"https://test.co\",\"path\":[\"callback_url\"]},\"_p_integration\":{\"ret_value\":\"text\",\"caption\":\"integration\",\"sample_value\":null,\"path\":[\"integration\"]},\"_p_team.name\":{\"ret_value\":\"text\",\"caption\":\"team name\",\"sample_value\":\"Ottho Sandbox\",\"path\":[\"team\",\"name\"]},\"_p_team.subdomain\":{\"ret_value\":\"text\",\"caption\":\"team subdomain\",\"sample_value\":\"ottho-sandbox\",\"path\":[\"team\",\"subdomain\"]},\"_p_team.url\":{\"ret_value\":\"text\",\"caption\":\"team url\",\"sample_value\":\"https://ottho-sandbox.signrequest.com/api/v1/teams/ottho-sandbox/\",\"path\":[\"team\",\"url\"]},\"_p_created\":{\"ret_value\":\"text\",\"caption\":\"created\",\"sample_value\":\"2021-02-01T12:06:43.828066Z\",\"path\":[\"created\"]}}}}",
+            "url": "https://[domain].signrequest.com/api/v1/webhooks/",
+            "url_params": {
+                "ACf": {
+                    "key": "domain",
+                    "private": true,
+                    "value": "ottho-sandbox"
+                }
+            }
+        },
+        "ACO": {
+            "0": "A",
+            "1": "C",
+            "2": "N",
+            "body": "{\n  \"name\": \"<name>\",\n  \"event_type\": \"<event>\",\n  \"callback_url\": \"<callback_url>\"\n}",
+            "body_params": {
+                "ACj": {
+                    "key": "name",
+                    "private": true,
+                    "value": "test"
+                },
+                "ACo": {
+                    "doc": "\"convert_error\" \"converted\" \"sending_error\" \"sent\" \"declined\" \"cancelled\" \"expired\" \"signed\" \"viewed\" \"downloaded\" \"signer_signed\" \"signer_email_bounced\" \"signer_viewed_email\" \"signer_viewed\" \"signer_forwarded\" \"signer_downloaded\" \"signrequest_received\" \"login_failed\" \"login_successful\" \"password_reset_request_sent\" \"password_reset_request_error\"",
+                    "key": "event",
+                    "private": true,
+                    "value": "viewed"
+                },
+                "ACp": {
+                    "key": "callback_url",
+                    "private": true,
+                    "value": "https://test.co"
+                }
+            },
+            "headers": {
+                "ACr": {
+                    "key": "Content-Type",
+                    "private": true,
+                    "value": "application/json"
+                }
+            },
+            "initialized": true,
+            "method": "post",
+            "name": "Create webhooks",
+            "publish_as": "action",
+            "rank": 13,
+            "ret_value": "api.1611558936137x553319032810897400.plugin_api.ACO",
+            "should_reinitialize": true,
+            "types": "{\"plugin_api.ACO\":{\"caption\":\"Create webhook\",\"fields\":{\"_p_url\":{\"ret_value\":\"text\",\"caption\":\"url\",\"sample_value\":\"https://ottho-sandbox.signrequest.com/api/v1/webhooks/510d660a-981b-4789-875c-cc98cd71171f/\",\"path\":[\"url\"]},\"_p_uuid\":{\"ret_value\":\"text\",\"caption\":\"uuid\",\"sample_value\":\"510d660a-981b-4789-875c-cc98cd71171f\",\"path\":[\"uuid\"]},\"_p_name\":{\"ret_value\":\"text\",\"caption\":\"name\",\"sample_value\":\"test\",\"path\":[\"name\"]},\"_p_event_type\":{\"ret_value\":\"text\",\"caption\":\"event_type\",\"sample_value\":\"viewed\",\"path\":[\"event_type\"]},\"_p_callback_url\":{\"ret_value\":\"text\",\"caption\":\"callback_url\",\"sample_value\":\"https://test.co\",\"path\":[\"callback_url\"]},\"_p_integration\":{\"ret_value\":\"text\",\"caption\":\"integration\",\"sample_value\":null,\"path\":[\"integration\"]},\"_p_team.name\":{\"ret_value\":\"text\",\"caption\":\"team name\",\"sample_value\":\"Ottho Sandbox\",\"path\":[\"team\",\"name\"]},\"_p_team.subdomain\":{\"ret_value\":\"text\",\"caption\":\"team subdomain\",\"sample_value\":\"ottho-sandbox\",\"path\":[\"team\",\"subdomain\"]},\"_p_team.url\":{\"ret_value\":\"text\",\"caption\":\"team url\",\"sample_value\":\"https://ottho-sandbox.signrequest.com/api/v1/teams/ottho-sandbox/\",\"path\":[\"team\",\"url\"]},\"_p_created\":{\"ret_value\":\"text\",\"caption\":\"created\",\"sample_value\":\"2021-02-01T12:06:18.522474Z\",\"path\":[\"created\"]}}}}",
+            "url": "https://[domain].signrequest.com/api/v1/webhooks/",
+            "url_params": {
+                "ACc": {
+                    "key": "domain",
+                    "private": true,
+                    "value": "ottho-sandbox"
+                }
+            }
+        },
+        "ACt": {
+            "0": "A",
+            "1": "C",
+            "2": "s",
+            "initialized": true,
+            "method": "get",
+            "name": "Get a webhook",
+            "publish_as": "data",
+            "rank": 12,
+            "ret_value": "api.1611558936137x553319032810897400.plugin_api.ACt",
+            "should_reinitialize": true,
+            "types": "{\"plugin_api.ACt\":{\"caption\":\"Get a webhook\",\"fields\":{\"_p_url\":{\"ret_value\":\"text\",\"caption\":\"url\",\"sample_value\":\"https://ottho-sandbox.signrequest.com/api/v1/webhooks/01b6520e-27fa-4f32-a9bc-34ccf06a2bec/\",\"path\":[\"url\"]},\"_p_uuid\":{\"ret_value\":\"text\",\"caption\":\"uuid\",\"sample_value\":\"01b6520e-27fa-4f32-a9bc-34ccf06a2bec\",\"path\":[\"uuid\"]},\"_p_name\":{\"ret_value\":\"text\",\"caption\":\"name\",\"sample_value\":\"test\",\"path\":[\"name\"]},\"_p_event_type\":{\"ret_value\":\"text\",\"caption\":\"event_type\",\"sample_value\":\"viewed\",\"path\":[\"event_type\"]},\"_p_callback_url\":{\"ret_value\":\"text\",\"caption\":\"callback_url\",\"sample_value\":\"https://test.co\",\"path\":[\"callback_url\"]},\"_p_integration\":{\"ret_value\":\"text\",\"caption\":\"integration\",\"sample_value\":null,\"path\":[\"integration\"]},\"_p_team.name\":{\"ret_value\":\"text\",\"caption\":\"team name\",\"sample_value\":\"Ottho Sandbox\",\"path\":[\"team\",\"name\"]},\"_p_team.subdomain\":{\"ret_value\":\"text\",\"caption\":\"team subdomain\",\"sample_value\":\"ottho-sandbox\",\"path\":[\"team\",\"subdomain\"]},\"_p_team.url\":{\"ret_value\":\"text\",\"caption\":\"team url\",\"sample_value\":\"https://ottho-sandbox.signrequest.com/api/v1/teams/ottho-sandbox/\",\"path\":[\"team\",\"url\"]},\"_p_created\":{\"ret_value\":\"text\",\"caption\":\"created\",\"sample_value\":\"2021-02-01T12:04:51.237343Z\",\"path\":[\"created\"]}}}}",
+            "url": "https://[domain].signrequest.com/api/v1/webhooks/[uuid]/",
+            "url_params": {
+                "ACf": {
+                    "key": "domain",
+                    "private": true,
+                    "value": "ottho-sandbox"
+                },
+                "ACu": {
+                    "key": "uuid",
+                    "private": true,
+                    "value": "01b6520e-27fa-4f32-a9bc-34ccf06a2bec"
+                }
+            }
+        },
+        "ACw": {
+            "0": "A",
+            "1": "C",
+            "2": "v",
+            "data_type": "text",
+            "initialized": true,
+            "method": "delete_method",
+            "name": "Delete a webhook",
+            "no_types": true,
+            "publish_as": "action",
+            "rank": 14,
+            "ret_value": "api.1611558936137x553319032810897400.plugin_api.ACv",
+            "should_reinitialize": true,
+            "types": "{\"plugin_api.ACv\":{\"caption\":\"Get a webhook\",\"fields\":{\"_p_url\":{\"ret_value\":\"text\",\"caption\":\"url\",\"sample_value\":\"https://ottho-sandbox.signrequest.com/api/v1/webhooks/01b6520e-27fa-4f32-a9bc-34ccf06a2bec/\",\"path\":[\"url\"]},\"_p_uuid\":{\"ret_value\":\"text\",\"caption\":\"uuid\",\"sample_value\":\"01b6520e-27fa-4f32-a9bc-34ccf06a2bec\",\"path\":[\"uuid\"]},\"_p_name\":{\"ret_value\":\"text\",\"caption\":\"name\",\"sample_value\":\"test\",\"path\":[\"name\"]},\"_p_event_type\":{\"ret_value\":\"text\",\"caption\":\"event_type\",\"sample_value\":\"viewed\",\"path\":[\"event_type\"]},\"_p_callback_url\":{\"ret_value\":\"text\",\"caption\":\"callback_url\",\"sample_value\":\"https://test.co\",\"path\":[\"callback_url\"]},\"_p_integration\":{\"ret_value\":\"text\",\"caption\":\"integration\",\"sample_value\":null,\"path\":[\"integration\"]},\"_p_team.name\":{\"ret_value\":\"text\",\"caption\":\"team name\",\"sample_value\":\"Ottho Sandbox\",\"path\":[\"team\",\"name\"]},\"_p_team.subdomain\":{\"ret_value\":\"text\",\"caption\":\"team subdomain\",\"sample_value\":\"ottho-sandbox\",\"path\":[\"team\",\"subdomain\"]},\"_p_team.url\":{\"ret_value\":\"text\",\"caption\":\"team url\",\"sample_value\":\"https://ottho-sandbox.signrequest.com/api/v1/teams/ottho-sandbox/\",\"path\":[\"team\",\"url\"]},\"_p_created\":{\"ret_value\":\"text\",\"caption\":\"created\",\"sample_value\":\"2021-02-01T12:04:51.237343Z\",\"path\":[\"created\"]}}}}",
+            "url": "https://[domain].signrequest.com/api/v1/webhooks/[uuid]/",
+            "url_params": {
+                "ACf": {
+                    "key": "domain",
+                    "private": true,
+                    "value": "ottho-sandbox"
+                },
+                "ACu": {
+                    "key": "uuid",
+                    "private": true,
+                    "value": "510d660a-981b-4789-875c-cc98cd71171f"
+                }
+            }
+        },
+        "AEJ": {
+            "0": "A",
+            "1": "E",
+            "2": "I",
+            "body": "{\n  \"from_email\": \"<fromemail>\",\n  \"send_reminders\": <send_reminders?>,\n  \"signers\": [\n    {\n      \"email\": \"<approver_email>\",\n      \"approve_only\": true,\n      \"language\": \"<lang>\",\n      \"embed_url_user_id\": \"<id_approver>\",\n      \"order\": 1\n    },\n          {\n      \"email\": \"<signer_email>\",\n      \"first_name\": \"<first_name>\",\n      \"last_name\": \"<last_name>\",\n      \"language\": \"<lang>\",\n      \"redirect_url\": \"<redirect_url>\",\n      \"embed_url_user_id\": \"<id_signer>\",\n      \"order\": 0\n    }\n  ],\n\n  \"template\": \"<template>\",\n  \"auto_delete_days\": <auto_delete_days>,\n  \"auto_expire_days\": <auto_expire_days>\n}",
+            "body_params": {
+                "ADf": {
+                    "key": "auto_delete_days",
+                    "private": true,
+                    "value": "1"
+                },
+                "ADg": {
+                    "doc": "",
+                    "key": "auto_expire_days",
+                    "private": true,
+                    "value": "1"
+                },
+                "AET": {
+                    "key": "send_reminders?",
+                    "private": true,
+                    "value": "true"
+                },
+                "AEc": {
+                    "key": "fromemail",
+                    "private": true,
+                    "value": "vnihoul77@gmail.com"
+                },
+                "AFI": {
+                    "key": "approver_email",
+                    "private": true,
+                    "value": "vnihoul77@gmail.com"
+                },
+                "AFJ": {
+                    "key": "signer_email",
+                    "private": true,
+                    "value": "3vnihoul77@gmail.com"
+                },
+                "AFN": {
+                    "key": "lang",
+                    "private": true,
+                    "value": "fr"
+                },
+                "AFO": {
+                    "key": "first_name",
+                    "private": true,
+                    "value": "Victor"
+                },
+                "AFQ": {
+                    "key": "redirect_url",
+                    "private": true,
+                    "value": "https://ottho-fr.signrequest.com/api/v1/templates/2cd86cf6-7902-49e8-875c-dfe99fb89e9f/"
+                },
+                "AFR": {
+                    "key": "template",
+                    "private": true,
+                    "value": "https://ottho-fr.signrequest.com/api/v1/templates/b3400d71-bc6b-49c4-a6b9-200b61b98ed9/"
+                },
+                "AFb": {
+                    "key": "last_name",
+                    "private": true,
+                    "value": "Nihoul"
+                },
+                "AFm": {
+                    "key": "id_approver",
+                    "private": true,
+                    "value": ""
+                },
+                "AFw": {
+                    "key": "id_signer",
+                    "private": true,
+                    "value": ""
+                }
+            },
+            "headers": {
+                "AAJ": {
+                    "key": "Content-Type",
+                    "private": true,
+                    "value": "application/json"
+                }
+            },
+            "initialized": true,
+            "method": "post",
+            "name": "Quick request (1s - 1a)",
+            "publish_as": "action",
+            "rank": 4,
+            "ret_value": "api.1611558936137x553319032810897400.plugin_api.AEJ",
+            "should_reinitialize": false,
+            "types": "{\"plugin_api.AEJ\":{\"caption\":\"Quick request (1s - 1a)\",\"fields\":{\"_p_from_email\":{\"ret_value\":\"text\",\"caption\":\"from_email\",\"sample_value\":\"vnihoul77@gmail.com\",\"path\":[\"from_email\"]},\"_p_from_email_name\":{\"ret_value\":\"text\",\"caption\":\"from_email_name\",\"sample_value\":null,\"path\":[\"from_email_name\"]},\"_p_is_being_prepared\":{\"ret_value\":\"boolean\",\"caption\":\"is_being_prepared\",\"sample_value\":false,\"path\":[\"is_being_prepared\"]},\"_p_prepare_url\":{\"ret_value\":\"text\",\"caption\":\"prepare_url\",\"sample_value\":null,\"path\":[\"prepare_url\"]},\"_p_redirect_url\":{\"ret_value\":\"text\",\"caption\":\"redirect_url\",\"sample_value\":null,\"path\":[\"redirect_url\"]},\"_p_redirect_url_declined\":{\"ret_value\":\"text\",\"caption\":\"redirect_url_declined\",\"sample_value\":null,\"path\":[\"redirect_url_declined\"]},\"_p_disable_attachments\":{\"ret_value\":\"boolean\",\"caption\":\"disable_attachments\",\"sample_value\":false,\"path\":[\"disable_attachments\"]},\"_p_disable_text_signatures\":{\"ret_value\":\"boolean\",\"caption\":\"disable_text_signatures\",\"sample_value\":false,\"path\":[\"disable_text_signatures\"]},\"_p_disable_text\":{\"ret_value\":\"boolean\",\"caption\":\"disable_text\",\"sample_value\":false,\"path\":[\"disable_text\"]},\"_p_disable_date\":{\"ret_value\":\"boolean\",\"caption\":\"disable_date\",\"sample_value\":false,\"path\":[\"disable_date\"]},\"_p_disable_emails\":{\"ret_value\":\"boolean\",\"caption\":\"disable_emails\",\"sample_value\":false,\"path\":[\"disable_emails\"]},\"_p_disable_upload_signatures\":{\"ret_value\":\"boolean\",\"caption\":\"disable_upload_signatures\",\"sample_value\":false,\"path\":[\"disable_upload_signatures\"]},\"_p_force_signature_color\":{\"ret_value\":\"text\",\"caption\":\"force_signature_color\",\"sample_value\":null,\"path\":[\"force_signature_color\"]},\"_p_disable_blockchain_proof\":{\"ret_value\":\"text\",\"caption\":\"disable_blockchain_proof\",\"sample_value\":null,\"path\":[\"disable_blockchain_proof\"]},\"_p_text_message_verification_locked\":{\"ret_value\":\"text\",\"caption\":\"text_message_verification_locked\",\"sample_value\":null,\"path\":[\"text_message_verification_locked\"]},\"_p_subject\":{\"ret_value\":\"text\",\"caption\":\"subject\",\"sample_value\":\"[Ottho] Votre contrat bootcamp\",\"path\":[\"subject\"]},\"_p_message\":{\"ret_value\":\"text\",\"caption\":\"message\",\"sample_value\":\"Please sign this document.\\n\\nKind regards,\\n\\nOttho FR - Ottho (ottho.tools@gmail.com)\",\"path\":[\"message\"]},\"_p_who\":{\"ret_value\":\"text\",\"caption\":\"who\",\"sample_value\":\"o\",\"path\":[\"who\"]},\"_p_send_reminders\":{\"ret_value\":\"boolean\",\"caption\":\"send_reminders\",\"sample_value\":true,\"path\":[\"send_reminders\"]},\"_p_signers\":{\"ret_value\":\"list.api.1611558936137x553319032810897400.plugin_api.AEJ.signers\",\"caption\":\"signers\",\"path\":[\"signers\"]},\"_p_uuid\":{\"ret_value\":\"text\",\"caption\":\"uuid\",\"sample_value\":\"9951956f-e3cc-46b1-b661-60a0cc236bc6\",\"path\":[\"uuid\"]},\"_p_url\":{\"ret_value\":\"text\",\"caption\":\"url\",\"sample_value\":\"https://ottho-fr.signrequest.com/api/v1/signrequests/9951956f-e3cc-46b1-b661-60a0cc236bc6/\",\"path\":[\"url\"]},\"_p_document\":{\"ret_value\":\"text\",\"caption\":\"document\",\"sample_value\":\"https://ottho-fr.signrequest.com/api/v1/documents/0c83aab3-d7e9-4545-a30d-0ad4f9040f2d/\",\"path\":[\"document\"]},\"_p_integration\":{\"ret_value\":\"text\",\"caption\":\"integration\",\"sample_value\":null,\"path\":[\"integration\"]},\"_p_integration_data\":{\"ret_value\":\"text\",\"caption\":\"integration_data\",\"sample_value\":null,\"path\":[\"integration_data\"]},\"_p_name\":{\"ret_value\":\"text\",\"caption\":\"name\",\"sample_value\":null,\"path\":[\"name\"]},\"_p_external_id\":{\"ret_value\":\"text\",\"caption\":\"external_id\",\"sample_value\":null,\"path\":[\"external_id\"]},\"_p_file\":{\"ret_value\":\"text\",\"caption\":\"file\",\"sample_value\":null,\"path\":[\"file\"]},\"_p_file_from_url\":{\"ret_value\":\"text\",\"caption\":\"file_from_url\",\"sample_value\":null,\"path\":[\"file_from_url\"]},\"_p_events_callback_url\":{\"ret_value\":\"text\",\"caption\":\"events_callback_url\",\"sample_value\":null,\"path\":[\"events_callback_url\"]},\"_p_file_from_sf\":{\"ret_value\":\"text\",\"caption\":\"file_from_sf\",\"sample_value\":null,\"path\":[\"file_from_sf\"]},\"_p_auto_delete_days\":{\"ret_value\":\"text\",\"caption\":\"auto_delete_days\",\"sample_value\":null,\"path\":[\"auto_delete_days\"]},\"_p_auto_expire_days\":{\"ret_value\":\"text\",\"caption\":\"auto_expire_days\",\"sample_value\":null,\"path\":[\"auto_expire_days\"]}}},\"plugin_api.AEJ.signers\":{\"caption\":\"Quick request (1s - 1a) signer\",\"fields\":{\"_p_email\":{\"ret_value\":\"text\",\"caption\":\"email\",\"sample_value\":\"vnihoul77@gmail.com\",\"path\":[\"email\"]},\"_p_display_name\":{\"ret_value\":\"text\",\"caption\":\"display_name\",\"sample_value\":\"Victor Nihoul (vnihoul77@gmail.com)\",\"path\":[\"display_name\"]},\"_p_first_name\":{\"ret_value\":\"text\",\"caption\":\"first_name\",\"sample_value\":\"Victor\",\"path\":[\"first_name\"]},\"_p_last_name\":{\"ret_value\":\"text\",\"caption\":\"last_name\",\"sample_value\":\"Nihoul\",\"path\":[\"last_name\"]},\"_p_email_viewed\":{\"ret_value\":\"boolean\",\"caption\":\"email_viewed\",\"sample_value\":false,\"path\":[\"email_viewed\"]},\"_p_viewed\":{\"ret_value\":\"boolean\",\"caption\":\"viewed\",\"sample_value\":false,\"path\":[\"viewed\"]},\"_p_signed\":{\"ret_value\":\"boolean\",\"caption\":\"signed\",\"sample_value\":false,\"path\":[\"signed\"]},\"_p_downloaded\":{\"ret_value\":\"boolean\",\"caption\":\"downloaded\",\"sample_value\":false,\"path\":[\"downloaded\"]},\"_p_signed_on\":{\"ret_value\":\"text\",\"caption\":\"signed_on\",\"sample_value\":null,\"path\":[\"signed_on\"]},\"_p_needs_to_sign\":{\"ret_value\":\"boolean\",\"caption\":\"needs_to_sign\",\"sample_value\":true,\"path\":[\"needs_to_sign\"]},\"_p_approve_only\":{\"ret_value\":\"boolean\",\"caption\":\"approve_only\",\"sample_value\":true,\"path\":[\"approve_only\"]},\"_p_notify_only\":{\"ret_value\":\"boolean\",\"caption\":\"notify_only\",\"sample_value\":false,\"path\":[\"notify_only\"]},\"_p_in_person\":{\"ret_value\":\"boolean\",\"caption\":\"in_person\",\"sample_value\":false,\"path\":[\"in_person\"]},\"_p_order\":{\"ret_value\":\"number\",\"caption\":\"order\",\"sample_value\":1,\"path\":[\"order\"]},\"_p_language\":{\"ret_value\":\"text\",\"caption\":\"language\",\"sample_value\":\"fr\",\"path\":[\"language\"]},\"_p_force_language\":{\"ret_value\":\"boolean\",\"caption\":\"force_language\",\"sample_value\":false,\"path\":[\"force_language\"]},\"_p_emailed\":{\"ret_value\":\"boolean\",\"caption\":\"emailed\",\"sample_value\":false,\"path\":[\"emailed\"]},\"_p_verify_phone_number\":{\"ret_value\":\"text\",\"caption\":\"verify_phone_number\",\"sample_value\":null,\"path\":[\"verify_phone_number\"]},\"_p_verify_bank_account\":{\"ret_value\":\"text\",\"caption\":\"verify_bank_account\",\"sample_value\":null,\"path\":[\"verify_bank_account\"]},\"_p_declined\":{\"ret_value\":\"boolean\",\"caption\":\"declined\",\"sample_value\":false,\"path\":[\"declined\"]},\"_p_declined_on\":{\"ret_value\":\"text\",\"caption\":\"declined_on\",\"sample_value\":null,\"path\":[\"declined_on\"]},\"_p_forwarded\":{\"ret_value\":\"boolean\",\"caption\":\"forwarded\",\"sample_value\":false,\"path\":[\"forwarded\"]},\"_p_forwarded_on\":{\"ret_value\":\"text\",\"caption\":\"forwarded_on\",\"sample_value\":null,\"path\":[\"forwarded_on\"]},\"_p_forwarded_to_email\":{\"ret_value\":\"text\",\"caption\":\"forwarded_to_email\",\"sample_value\":null,\"path\":[\"forwarded_to_email\"]},\"_p_forwarded_reason\":{\"ret_value\":\"text\",\"caption\":\"forwarded_reason\",\"sample_value\":null,\"path\":[\"forwarded_reason\"]},\"_p_message\":{\"ret_value\":\"text\",\"caption\":\"message\",\"sample_value\":null,\"path\":[\"message\"]},\"_p_embed_url_user_id\":{\"ret_value\":\"text\",\"caption\":\"embed_url_user_id\",\"sample_value\":\"null\",\"path\":[\"embed_url_user_id\"]},\"_p_use_stamp_for_approve_only\":{\"ret_value\":\"boolean\",\"caption\":\"use_stamp_for_approve_only\",\"sample_value\":false,\"path\":[\"use_stamp_for_approve_only\"]},\"_p_embed_url\":{\"ret_value\":\"text\",\"caption\":\"embed_url\",\"sample_value\":\"https://ottho-fr.signrequest.com/r/document/0c83aab3-d7e9-4545-a30d-0ad4f9040f2d/ebb7d379790091e90f251ce837afa44d0a16e8c0a35508ff6772a45b0d5b789f/\",\"path\":[\"embed_url\"]},\"_p_redirect_url\":{\"ret_value\":\"text\",\"caption\":\"redirect_url\",\"sample_value\":\"https://ottho-fr.signrequest.com/api/v1/templates/2cd86cf6-7902-49e8-875c-dfe99fb89e9f/\",\"path\":[\"redirect_url\"]},\"_p_redirect_url_declined\":{\"ret_value\":\"text\",\"caption\":\"redirect_url_declined\",\"sample_value\":null,\"path\":[\"redirect_url_declined\"]},\"_p_after_document\":{\"ret_value\":\"text\",\"caption\":\"after_document\",\"sample_value\":null,\"path\":[\"after_document\"]}}}}",
+            "url": "https://[domain].signrequest.com/api/v1/signrequest-quick-create/",
+            "url_params": {
+                "ABW": {
+                    "key": "domain",
+                    "private": true,
+                    "value": "ottho-fr"
+                }
+            }
+        },
+        "AFy": {
+            "0": "A",
+            "1": "F",
+            "2": "x",
+            "initialized": true,
+            "method": "get",
+            "name": "Get a document from URL",
+            "publish_as": "data",
+            "rank": 7,
+            "ret_value": "api.1611558936137x553319032810897400.plugin_api.AFy",
+            "should_reinitialize": true,
+            "types": "{\"plugin_api.AFy\":{\"caption\":\"Get a document from URL\",\"fields\":{\"_p_url\":{\"ret_value\":\"text\",\"caption\":\"url\",\"sample_value\":\"https://ottho-fr.signrequest.com/api/v1/documents/78746975-68b9-4507-9694-470013e8c9ad/\",\"path\":[\"url\"]},\"_p_team.name\":{\"ret_value\":\"text\",\"caption\":\"team name\",\"sample_value\":\"Ottho FR\",\"path\":[\"team\",\"name\"]},\"_p_team.subdomain\":{\"ret_value\":\"text\",\"caption\":\"team subdomain\",\"sample_value\":\"ottho-fr\",\"path\":[\"team\",\"subdomain\"]},\"_p_team.url\":{\"ret_value\":\"text\",\"caption\":\"team url\",\"sample_value\":\"https://ottho-fr.signrequest.com/api/v1/teams/ottho-fr/\",\"path\":[\"team\",\"url\"]},\"_p_uuid\":{\"ret_value\":\"text\",\"caption\":\"uuid\",\"sample_value\":\"78746975-68b9-4507-9694-470013e8c9ad\",\"path\":[\"uuid\"]},\"_p_user\":{\"ret_value\":\"text\",\"caption\":\"user\",\"sample_value\":null,\"path\":[\"user\"]},\"_p_file_as_pdf\":{\"ret_value\":\"text\",\"caption\":\"file_as_pdf\",\"sample_value\":\"https://signrequest-pro.s3.amazonaws.com/original_pdfs/2021/02/06/1433a7556a9dbd274599d31c7721a5ecb3cbcab2/edm_la_0_20210103_2120.pdf?AWSAccessKeyId=AKIAIFC5SSMNRPLY3AMQ&Signature=3kPQOq7kX9eEVBB05HOjurkmXkU%3D&Expires=1612599854\",\"path\":[\"file_as_pdf\"]},\"_p_name\":{\"ret_value\":\"text\",\"caption\":\"name\",\"sample_value\":\"edm_la_0_20210103_2120.pdf\",\"path\":[\"name\"]},\"_p_external_id\":{\"ret_value\":\"text\",\"caption\":\"external_id\",\"sample_value\":null,\"path\":[\"external_id\"]},\"_p_file\":{\"ret_value\":\"text\",\"caption\":\"file\",\"sample_value\":\"https://signrequest-pro.s3.amazonaws.com/docs/2021/02/06/d265d44f0f21051f28ecea65b2aaae532e8ed24f/edm_la_0_20210103_2120.pdf?AWSAccessKeyId=AKIAIFC5SSMNRPLY3AMQ&Signature=0xAT%2FaOiG6ut%2BksIY7TI4bVfVgs%3D&Expires=1612599854\",\"path\":[\"file\"]},\"_p_file_from_url\":{\"ret_value\":\"text\",\"caption\":\"file_from_url\",\"sample_value\":null,\"path\":[\"file_from_url\"]},\"_p_events_callback_url\":{\"ret_value\":\"text\",\"caption\":\"events_callback_url\",\"sample_value\":null,\"path\":[\"events_callback_url\"]},\"_p_template\":{\"ret_value\":\"text\",\"caption\":\"template\",\"sample_value\":\"https://ottho-fr.signrequest.com/api/v1/templates/2cd86cf6-7902-49e8-875c-dfe99fb89e9f/\",\"path\":[\"template\"]},\"_p_file_from_sf\":{\"ret_value\":\"text\",\"caption\":\"file_from_sf\",\"sample_value\":null,\"path\":[\"file_from_sf\"]},\"_p_auto_delete_days\":{\"ret_value\":\"number\",\"caption\":\"auto_delete_days\",\"sample_value\":1,\"path\":[\"auto_delete_days\"]},\"_p_auto_expire_days\":{\"ret_value\":\"number\",\"caption\":\"auto_expire_days\",\"sample_value\":1,\"path\":[\"auto_expire_days\"]},\"_p_pdf\":{\"ret_value\":\"text\",\"caption\":\"pdf\",\"sample_value\":null,\"path\":[\"pdf\"]},\"_p_status\":{\"ret_value\":\"text\",\"caption\":\"status\",\"sample_value\":\"se\",\"path\":[\"status\"]},\"_p_signrequest.from_email\":{\"ret_value\":\"text\",\"caption\":\"signrequest from_email\",\"sample_value\":\"vnihoul77@gmail.com\",\"path\":[\"signrequest\",\"from_email\"]},\"_p_signrequest.from_email_name\":{\"ret_value\":\"text\",\"caption\":\"signrequest from_email_name\",\"sample_value\":null,\"path\":[\"signrequest\",\"from_email_name\"]},\"_p_signrequest.is_being_prepared\":{\"ret_value\":\"boolean\",\"caption\":\"signrequest is_being_prepared\",\"sample_value\":false,\"path\":[\"signrequest\",\"is_being_prepared\"]},\"_p_signrequest.prepare_url\":{\"ret_value\":\"text\",\"caption\":\"signrequest prepare_url\",\"sample_value\":null,\"path\":[\"signrequest\",\"prepare_url\"]},\"_p_signrequest.redirect_url\":{\"ret_value\":\"text\",\"caption\":\"signrequest redirect_url\",\"sample_value\":null,\"path\":[\"signrequest\",\"redirect_url\"]},\"_p_signrequest.redirect_url_declined\":{\"ret_value\":\"text\",\"caption\":\"signrequest redirect_url_declined\",\"sample_value\":null,\"path\":[\"signrequest\",\"redirect_url_declined\"]},\"_p_signrequest.disable_attachments\":{\"ret_value\":\"boolean\",\"caption\":\"signrequest disable_attachments\",\"sample_value\":false,\"path\":[\"signrequest\",\"disable_attachments\"]},\"_p_signrequest.disable_text_signatures\":{\"ret_value\":\"boolean\",\"caption\":\"signrequest disable_text_signatures\",\"sample_value\":false,\"path\":[\"signrequest\",\"disable_text_signatures\"]},\"_p_signrequest.disable_text\":{\"ret_value\":\"boolean\",\"caption\":\"signrequest disable_text\",\"sample_value\":false,\"path\":[\"signrequest\",\"disable_text\"]},\"_p_signrequest.disable_date\":{\"ret_value\":\"boolean\",\"caption\":\"signrequest disable_date\",\"sample_value\":false,\"path\":[\"signrequest\",\"disable_date\"]},\"_p_signrequest.disable_emails\":{\"ret_value\":\"boolean\",\"caption\":\"signrequest disable_emails\",\"sample_value\":false,\"path\":[\"signrequest\",\"disable_emails\"]},\"_p_signrequest.disable_upload_signatures\":{\"ret_value\":\"boolean\",\"caption\":\"signrequest disable_upload_signatures\",\"sample_value\":false,\"path\":[\"signrequest\",\"disable_upload_signatures\"]},\"_p_signrequest.force_signature_color\":{\"ret_value\":\"text\",\"caption\":\"signrequest force_signature_color\",\"sample_value\":null,\"path\":[\"signrequest\",\"force_signature_color\"]},\"_p_signrequest.disable_blockchain_proof\":{\"ret_value\":\"text\",\"caption\":\"signrequest disable_blockchain_proof\",\"sample_value\":null,\"path\":[\"signrequest\",\"disable_blockchain_proof\"]},\"_p_signrequest.text_message_verification_locked\":{\"ret_value\":\"text\",\"caption\":\"signrequest text_message_verification_locked\",\"sample_value\":null,\"path\":[\"signrequest\",\"text_message_verification_locked\"]},\"_p_signrequest.subject\":{\"ret_value\":\"text\",\"caption\":\"signrequest subject\",\"sample_value\":null,\"path\":[\"signrequest\",\"subject\"]},\"_p_signrequest.message\":{\"ret_value\":\"text\",\"caption\":\"signrequest message\",\"sample_value\":\"Please sign this document.\\n\\nKind regards,\\n\\nOttho - Victor Nihoul (vnihoul77@gmail.com)\",\"path\":[\"signrequest\",\"message\"]},\"_p_signrequest.who\":{\"ret_value\":\"text\",\"caption\":\"signrequest who\",\"sample_value\":\"o\",\"path\":[\"signrequest\",\"who\"]},\"_p_signrequest.send_reminders\":{\"ret_value\":\"boolean\",\"caption\":\"signrequest send_reminders\",\"sample_value\":true,\"path\":[\"signrequest\",\"send_reminders\"]},\"_p_signrequest.signers\":{\"ret_value\":\"list.api.1611558936137x553319032810897400.plugin_api.AFy.signrequest.signers\",\"caption\":\"signrequest signers\",\"path\":[\"signrequest\",\"signers\"]},\"_p_signrequest.uuid\":{\"ret_value\":\"text\",\"caption\":\"signrequest uuid\",\"sample_value\":\"b48996ba-673d-417b-b561-03cbd84ce3ad\",\"path\":[\"signrequest\",\"uuid\"]},\"_p_api_used\":{\"ret_value\":\"boolean\",\"caption\":\"api_used\",\"sample_value\":true,\"path\":[\"api_used\"]},\"_p_signing_log\":{\"ret_value\":\"text\",\"caption\":\"signing_log\",\"sample_value\":null,\"path\":[\"signing_log\"]},\"_p_security_hash\":{\"ret_value\":\"text\",\"caption\":\"security_hash\",\"sample_value\":null,\"path\":[\"security_hash\"]},\"_p_auto_delete_after\":{\"ret_value\":\"text\",\"caption\":\"auto_delete_after\",\"sample_value\":null,\"path\":[\"auto_delete_after\"]},\"_p_sandbox\":{\"ret_value\":\"boolean\",\"caption\":\"sandbox\",\"sample_value\":true,\"path\":[\"sandbox\"]},\"_p_auto_expire_after\":{\"ret_value\":\"text\",\"caption\":\"auto_expire_after\",\"sample_value\":\"2021-02-07T07:54:41.437538Z\",\"path\":[\"auto_expire_after\"]},\"_p_processing\":{\"ret_value\":\"boolean\",\"caption\":\"processing\",\"sample_value\":false,\"path\":[\"processing\"]}}},\"plugin_api.AFy.signrequest.signers\":{\"caption\":\"Get a document from URL signrequest signer\",\"fields\":{\"_p_email\":{\"ret_value\":\"text\",\"caption\":\"email\",\"sample_value\":\"vnihoul77@gmail.com\",\"path\":[\"email\"]},\"_p_display_name\":{\"ret_value\":\"text\",\"caption\":\"display_name\",\"sample_value\":\"Victor Nihoul (vnihoul77@gmail.com)\",\"path\":[\"display_name\"]},\"_p_first_name\":{\"ret_value\":\"text\",\"caption\":\"first_name\",\"sample_value\":\"Victor\",\"path\":[\"first_name\"]},\"_p_last_name\":{\"ret_value\":\"text\",\"caption\":\"last_name\",\"sample_value\":\"Nihoul\",\"path\":[\"last_name\"]},\"_p_email_viewed\":{\"ret_value\":\"boolean\",\"caption\":\"email_viewed\",\"sample_value\":false,\"path\":[\"email_viewed\"]},\"_p_viewed\":{\"ret_value\":\"boolean\",\"caption\":\"viewed\",\"sample_value\":false,\"path\":[\"viewed\"]},\"_p_signed\":{\"ret_value\":\"boolean\",\"caption\":\"signed\",\"sample_value\":false,\"path\":[\"signed\"]},\"_p_downloaded\":{\"ret_value\":\"boolean\",\"caption\":\"downloaded\",\"sample_value\":false,\"path\":[\"downloaded\"]},\"_p_signed_on\":{\"ret_value\":\"text\",\"caption\":\"signed_on\",\"sample_value\":null,\"path\":[\"signed_on\"]},\"_p_needs_to_sign\":{\"ret_value\":\"boolean\",\"caption\":\"needs_to_sign\",\"sample_value\":true,\"path\":[\"needs_to_sign\"]},\"_p_approve_only\":{\"ret_value\":\"boolean\",\"caption\":\"approve_only\",\"sample_value\":true,\"path\":[\"approve_only\"]},\"_p_notify_only\":{\"ret_value\":\"boolean\",\"caption\":\"notify_only\",\"sample_value\":false,\"path\":[\"notify_only\"]},\"_p_in_person\":{\"ret_value\":\"boolean\",\"caption\":\"in_person\",\"sample_value\":false,\"path\":[\"in_person\"]},\"_p_order\":{\"ret_value\":\"number\",\"caption\":\"order\",\"sample_value\":1,\"path\":[\"order\"]},\"_p_language\":{\"ret_value\":\"text\",\"caption\":\"language\",\"sample_value\":\"fr\",\"path\":[\"language\"]},\"_p_force_language\":{\"ret_value\":\"boolean\",\"caption\":\"force_language\",\"sample_value\":false,\"path\":[\"force_language\"]},\"_p_emailed\":{\"ret_value\":\"boolean\",\"caption\":\"emailed\",\"sample_value\":false,\"path\":[\"emailed\"]},\"_p_verify_phone_number\":{\"ret_value\":\"text\",\"caption\":\"verify_phone_number\",\"sample_value\":null,\"path\":[\"verify_phone_number\"]},\"_p_verify_bank_account\":{\"ret_value\":\"text\",\"caption\":\"verify_bank_account\",\"sample_value\":null,\"path\":[\"verify_bank_account\"]},\"_p_declined\":{\"ret_value\":\"boolean\",\"caption\":\"declined\",\"sample_value\":false,\"path\":[\"declined\"]},\"_p_declined_on\":{\"ret_value\":\"text\",\"caption\":\"declined_on\",\"sample_value\":null,\"path\":[\"declined_on\"]},\"_p_forwarded\":{\"ret_value\":\"boolean\",\"caption\":\"forwarded\",\"sample_value\":false,\"path\":[\"forwarded\"]},\"_p_forwarded_on\":{\"ret_value\":\"text\",\"caption\":\"forwarded_on\",\"sample_value\":null,\"path\":[\"forwarded_on\"]},\"_p_forwarded_to_email\":{\"ret_value\":\"text\",\"caption\":\"forwarded_to_email\",\"sample_value\":null,\"path\":[\"forwarded_to_email\"]},\"_p_forwarded_reason\":{\"ret_value\":\"text\",\"caption\":\"forwarded_reason\",\"sample_value\":null,\"path\":[\"forwarded_reason\"]},\"_p_message\":{\"ret_value\":\"text\",\"caption\":\"message\",\"sample_value\":null,\"path\":[\"message\"]},\"_p_embed_url_user_id\":{\"ret_value\":\"text\",\"caption\":\"embed_url_user_id\",\"sample_value\":\"null\",\"path\":[\"embed_url_user_id\"]},\"_p_use_stamp_for_approve_only\":{\"ret_value\":\"boolean\",\"caption\":\"use_stamp_for_approve_only\",\"sample_value\":false,\"path\":[\"use_stamp_for_approve_only\"]},\"_p_embed_url\":{\"ret_value\":\"text\",\"caption\":\"embed_url\",\"sample_value\":\"https://ottho-fr.signrequest.com/r/document/78746975-68b9-4507-9694-470013e8c9ad/103d5ae486f566d12d0e13f883eae9f83fb2239d3da6fddd60011d6970eb61c0/\",\"path\":[\"embed_url\"]},\"_p_redirect_url\":{\"ret_value\":\"text\",\"caption\":\"redirect_url\",\"sample_value\":\"https://ottho-fr.signrequest.com/api/v1/templates/2cd86cf6-7902-49e8-875c-dfe99fb89e9f/\",\"path\":[\"redirect_url\"]},\"_p_redirect_url_declined\":{\"ret_value\":\"text\",\"caption\":\"redirect_url_declined\",\"sample_value\":null,\"path\":[\"redirect_url_declined\"]},\"_p_after_document\":{\"ret_value\":\"text\",\"caption\":\"after_document\",\"sample_value\":null,\"path\":[\"after_document\"]}}}}",
+            "url": "[URL]",
+            "url_params": {
+                "AGB": {
+                    "key": "URL",
+                    "private": true,
+                    "value": "https://ottho-fr.signrequest.com/api/v1/documents/4216411f-fc12-4fc1-963d-cdc5cbc2aae2/"
+                }
+            }
+        },
+        "AGE": {
+            "0": "A",
+            "1": "G",
+            "2": "D",
+            "initialized": true,
+            "method": "post",
+            "name": "Delete a request ",
+            "publish_as": "action",
+            "rank": 9,
+            "ret_value": "api.1611558936137x553319032810897400.plugin_api.AGE",
+            "should_reinitialize": true,
+            "types": "{\"plugin_api.AGE\":{\"caption\":\"Delete a request \",\"fields\":{\"_p_detail\":{\"ret_value\":\"text\",\"caption\":\"detail\",\"sample_value\":\"OK\",\"path\":[\"detail\"]},\"_p_cancelled\":{\"ret_value\":\"boolean\",\"caption\":\"cancelled\",\"sample_value\":true,\"path\":[\"cancelled\"]}}}}",
+            "url": "https://[domain].signrequest.com/api/v1/signrequests/[uuid]/cancel_signrequest/",
+            "url_params": {
+                "ACB": {
+                    "key": "domain",
+                    "private": true,
+                    "value": "ottho-fr"
+                },
+                "ACC": {
+                    "key": "uuid",
+                    "private": true,
+                    "value": "b61196f0-865c-4fa5-bf86-c8d61a663e1b"
+                }
+            }
+        },
+        "AGG": {
+            "0": "A",
+            "1": "G",
+            "2": "F",
+            "body": "{\n  \"from_email\": \"<fromemail>\",\n  \"send_reminders\": <send_reminders?>,\n  \"signers\": [\n    {\n      \"email\": \"<approver_email>\",\n      \"approve_only\": true,\n      \"language\": \"<lang>\",\n      \"embed_url_user_id\": \"<id_approver>\",\n      \"order\": 1\n    },\n          {\n      \"email\": \"<signer_email>\",\n      \"first_name\": \"<first_name>\",\n      \"last_name\": \"<last_name>\",\n      \"language\": \"<lang>\",\n      <needs_to_sign>\n      \"approve_only\": <approve_only>,\n      \"redirect_url\": \"<redirect_url>\",\n      \"embed_url_user_id\": \"<id_signer>\",\n      \"order\": 0\n    }\n  ],\n\n  \"file_from_url\": \"<file>\",\n  \"auto_delete_days\": <auto_delete_days>,\n  \"auto_expire_days\": <auto_expire_days>\n}",
+            "body_params": {
+                "ADf": {
+                    "key": "auto_delete_days",
+                    "private": true,
+                    "value": "1"
+                },
+                "ADg": {
+                    "doc": "",
+                    "key": "auto_expire_days",
+                    "private": true,
+                    "value": "1"
+                },
+                "AET": {
+                    "key": "send_reminders?",
+                    "private": true,
+                    "value": "true"
+                },
+                "AEc": {
+                    "key": "fromemail",
+                    "private": true,
+                    "value": "vnihoul77@gmail.com"
+                },
+                "AFI": {
+                    "key": "approver_email",
+                    "private": true,
+                    "value": "vnihoul77@gmail.com"
+                },
+                "AFJ": {
+                    "key": "signer_email",
+                    "private": true,
+                    "value": "3vnihoul77@gmail.com"
+                },
+                "AFN": {
+                    "key": "lang",
+                    "private": true,
+                    "value": "fr"
+                },
+                "AFO": {
+                    "key": "first_name",
+                    "private": true,
+                    "value": "Victor"
+                },
+                "AFb": {
+                    "key": "last_name",
+                    "private": true,
+                    "value": "Nihoul"
+                },
+                "AFm": {
+                    "key": "id_approver",
+                    "private": true,
+                    "value": ""
+                },
+                "AFw": {
+                    "key": "id_signer",
+                    "private": true,
+                    "value": ""
+                },
+                "AGK": {
+                    "key": "file",
+                    "private": true,
+                    "value": "https://s3.amazonaws.com/appforest_uf/f1612902970523x206570570284392960/Nihoul%2520Victor%2520-%2520Test.pdf"
+                },
+                "AGN": {
+                    "key": "redirect_url",
+                    "private": true,
+                    "value": "https://s3.amazonaws.com/appforest_uf/f1612902970523x206570570284392960/Nihoul%2520Victor%2520-%2520Test.pdf"
+                },
+                "AGO": {
+                    "key": "approve_only",
+                    "private": true,
+                    "value": "false"
+                },
+                "AGQ": {
+                    "key": "needs_to_sign",
+                    "private": true,
+                    "value": "\"needs_to_sign\": true,"
+                }
+            },
+            "headers": {
+                "AAJ": {
+                    "key": "Content-Type",
+                    "private": true,
+                    "value": "application/json"
+                }
+            },
+            "initialized": true,
+            "method": "post",
+            "name": "Quick request (1s - 1a) (doc upload)",
+            "publish_as": "action",
+            "rank": 5,
+            "ret_value": "api.1611558936137x553319032810897400.plugin_api.AGG",
+            "should_reinitialize": false,
+            "types": "{\"plugin_api.AGG\":{\"caption\":\"Quick request (1s - 1a) (doc upload)\",\"fields\":{\"_p_from_email\":{\"ret_value\":\"text\",\"caption\":\"from_email\",\"sample_value\":\"vnihoul77@gmail.com\",\"path\":[\"from_email\"]},\"_p_from_email_name\":{\"ret_value\":\"text\",\"caption\":\"from_email_name\",\"sample_value\":null,\"path\":[\"from_email_name\"]},\"_p_is_being_prepared\":{\"ret_value\":\"boolean\",\"caption\":\"is_being_prepared\",\"sample_value\":false,\"path\":[\"is_being_prepared\"]},\"_p_prepare_url\":{\"ret_value\":\"text\",\"caption\":\"prepare_url\",\"sample_value\":null,\"path\":[\"prepare_url\"]},\"_p_redirect_url\":{\"ret_value\":\"text\",\"caption\":\"redirect_url\",\"sample_value\":null,\"path\":[\"redirect_url\"]},\"_p_redirect_url_declined\":{\"ret_value\":\"text\",\"caption\":\"redirect_url_declined\",\"sample_value\":null,\"path\":[\"redirect_url_declined\"]},\"_p_disable_attachments\":{\"ret_value\":\"boolean\",\"caption\":\"disable_attachments\",\"sample_value\":false,\"path\":[\"disable_attachments\"]},\"_p_disable_text_signatures\":{\"ret_value\":\"boolean\",\"caption\":\"disable_text_signatures\",\"sample_value\":false,\"path\":[\"disable_text_signatures\"]},\"_p_disable_text\":{\"ret_value\":\"boolean\",\"caption\":\"disable_text\",\"sample_value\":false,\"path\":[\"disable_text\"]},\"_p_disable_date\":{\"ret_value\":\"boolean\",\"caption\":\"disable_date\",\"sample_value\":false,\"path\":[\"disable_date\"]},\"_p_disable_emails\":{\"ret_value\":\"boolean\",\"caption\":\"disable_emails\",\"sample_value\":false,\"path\":[\"disable_emails\"]},\"_p_disable_upload_signatures\":{\"ret_value\":\"boolean\",\"caption\":\"disable_upload_signatures\",\"sample_value\":false,\"path\":[\"disable_upload_signatures\"]},\"_p_force_signature_color\":{\"ret_value\":\"text\",\"caption\":\"force_signature_color\",\"sample_value\":null,\"path\":[\"force_signature_color\"]},\"_p_disable_blockchain_proof\":{\"ret_value\":\"text\",\"caption\":\"disable_blockchain_proof\",\"sample_value\":null,\"path\":[\"disable_blockchain_proof\"]},\"_p_text_message_verification_locked\":{\"ret_value\":\"text\",\"caption\":\"text_message_verification_locked\",\"sample_value\":null,\"path\":[\"text_message_verification_locked\"]},\"_p_subject\":{\"ret_value\":\"text\",\"caption\":\"subject\",\"sample_value\":null,\"path\":[\"subject\"]},\"_p_message\":{\"ret_value\":\"text\",\"caption\":\"message\",\"sample_value\":null,\"path\":[\"message\"]},\"_p_who\":{\"ret_value\":\"text\",\"caption\":\"who\",\"sample_value\":\"o\",\"path\":[\"who\"]},\"_p_send_reminders\":{\"ret_value\":\"boolean\",\"caption\":\"send_reminders\",\"sample_value\":true,\"path\":[\"send_reminders\"]},\"_p_signers\":{\"ret_value\":\"list.api.1611558936137x553319032810897400.plugin_api.AGG.signers\",\"caption\":\"signers\",\"path\":[\"signers\"]},\"_p_uuid\":{\"ret_value\":\"text\",\"caption\":\"uuid\",\"sample_value\":\"ba3ee78b-24e6-43a4-82f6-3825df36b656\",\"path\":[\"uuid\"]},\"_p_url\":{\"ret_value\":\"text\",\"caption\":\"url\",\"sample_value\":\"https://ottho-fr.signrequest.com/api/v1/signrequests/ba3ee78b-24e6-43a4-82f6-3825df36b656/\",\"path\":[\"url\"]},\"_p_document\":{\"ret_value\":\"text\",\"caption\":\"document\",\"sample_value\":\"https://ottho-fr.signrequest.com/api/v1/documents/b65723a7-20f7-4bca-9d20-3eca110a89f3/\",\"path\":[\"document\"]},\"_p_integration\":{\"ret_value\":\"text\",\"caption\":\"integration\",\"sample_value\":null,\"path\":[\"integration\"]},\"_p_integration_data\":{\"ret_value\":\"text\",\"caption\":\"integration_data\",\"sample_value\":null,\"path\":[\"integration_data\"]},\"_p_name\":{\"ret_value\":\"text\",\"caption\":\"name\",\"sample_value\":null,\"path\":[\"name\"]},\"_p_external_id\":{\"ret_value\":\"text\",\"caption\":\"external_id\",\"sample_value\":null,\"path\":[\"external_id\"]},\"_p_file\":{\"ret_value\":\"text\",\"caption\":\"file\",\"sample_value\":null,\"path\":[\"file\"]},\"_p_file_from_url\":{\"ret_value\":\"text\",\"caption\":\"file_from_url\",\"sample_value\":null,\"path\":[\"file_from_url\"]},\"_p_events_callback_url\":{\"ret_value\":\"text\",\"caption\":\"events_callback_url\",\"sample_value\":null,\"path\":[\"events_callback_url\"]},\"_p_file_from_sf\":{\"ret_value\":\"text\",\"caption\":\"file_from_sf\",\"sample_value\":null,\"path\":[\"file_from_sf\"]},\"_p_auto_delete_days\":{\"ret_value\":\"number\",\"caption\":\"auto_delete_days\",\"sample_value\":null,\"path\":[\"auto_delete_days\"]},\"_p_auto_expire_days\":{\"ret_value\":\"number\",\"caption\":\"auto_expire_days\",\"sample_value\":null,\"path\":[\"auto_expire_days\"]}}},\"plugin_api.AGG.signers\":{\"caption\":\"Quick request (1s - 1a) (doc upload) signer\",\"fields\":{\"_p_email\":{\"ret_value\":\"text\",\"caption\":\"email\",\"sample_value\":\"vnihoul77@gmail.com\",\"path\":[\"email\"]},\"_p_display_name\":{\"ret_value\":\"text\",\"caption\":\"display_name\",\"sample_value\":\"Victor Nihoul (vnihoul77@gmail.com)\",\"path\":[\"display_name\"]},\"_p_first_name\":{\"ret_value\":\"text\",\"caption\":\"first_name\",\"sample_value\":\"Victor\",\"path\":[\"first_name\"]},\"_p_last_name\":{\"ret_value\":\"text\",\"caption\":\"last_name\",\"sample_value\":\"Nihoul\",\"path\":[\"last_name\"]},\"_p_email_viewed\":{\"ret_value\":\"boolean\",\"caption\":\"email_viewed\",\"sample_value\":false,\"path\":[\"email_viewed\"]},\"_p_viewed\":{\"ret_value\":\"boolean\",\"caption\":\"viewed\",\"sample_value\":false,\"path\":[\"viewed\"]},\"_p_signed\":{\"ret_value\":\"boolean\",\"caption\":\"signed\",\"sample_value\":false,\"path\":[\"signed\"]},\"_p_downloaded\":{\"ret_value\":\"boolean\",\"caption\":\"downloaded\",\"sample_value\":false,\"path\":[\"downloaded\"]},\"_p_signed_on\":{\"ret_value\":\"text\",\"caption\":\"signed_on\",\"sample_value\":null,\"path\":[\"signed_on\"]},\"_p_needs_to_sign\":{\"ret_value\":\"boolean\",\"caption\":\"needs_to_sign\",\"sample_value\":true,\"path\":[\"needs_to_sign\"]},\"_p_approve_only\":{\"ret_value\":\"boolean\",\"caption\":\"approve_only\",\"sample_value\":true,\"path\":[\"approve_only\"]},\"_p_notify_only\":{\"ret_value\":\"boolean\",\"caption\":\"notify_only\",\"sample_value\":false,\"path\":[\"notify_only\"]},\"_p_in_person\":{\"ret_value\":\"boolean\",\"caption\":\"in_person\",\"sample_value\":false,\"path\":[\"in_person\"]},\"_p_order\":{\"ret_value\":\"number\",\"caption\":\"order\",\"sample_value\":1,\"path\":[\"order\"]},\"_p_language\":{\"ret_value\":\"text\",\"caption\":\"language\",\"sample_value\":\"fr\",\"path\":[\"language\"]},\"_p_force_language\":{\"ret_value\":\"boolean\",\"caption\":\"force_language\",\"sample_value\":false,\"path\":[\"force_language\"]},\"_p_emailed\":{\"ret_value\":\"boolean\",\"caption\":\"emailed\",\"sample_value\":false,\"path\":[\"emailed\"]},\"_p_verify_phone_number\":{\"ret_value\":\"text\",\"caption\":\"verify_phone_number\",\"sample_value\":null,\"path\":[\"verify_phone_number\"]},\"_p_verify_bank_account\":{\"ret_value\":\"text\",\"caption\":\"verify_bank_account\",\"sample_value\":null,\"path\":[\"verify_bank_account\"]},\"_p_declined\":{\"ret_value\":\"boolean\",\"caption\":\"declined\",\"sample_value\":false,\"path\":[\"declined\"]},\"_p_declined_on\":{\"ret_value\":\"text\",\"caption\":\"declined_on\",\"sample_value\":null,\"path\":[\"declined_on\"]},\"_p_forwarded\":{\"ret_value\":\"boolean\",\"caption\":\"forwarded\",\"sample_value\":false,\"path\":[\"forwarded\"]},\"_p_forwarded_on\":{\"ret_value\":\"text\",\"caption\":\"forwarded_on\",\"sample_value\":null,\"path\":[\"forwarded_on\"]},\"_p_forwarded_to_email\":{\"ret_value\":\"text\",\"caption\":\"forwarded_to_email\",\"sample_value\":null,\"path\":[\"forwarded_to_email\"]},\"_p_forwarded_reason\":{\"ret_value\":\"text\",\"caption\":\"forwarded_reason\",\"sample_value\":null,\"path\":[\"forwarded_reason\"]},\"_p_message\":{\"ret_value\":\"text\",\"caption\":\"message\",\"sample_value\":null,\"path\":[\"message\"]},\"_p_embed_url_user_id\":{\"ret_value\":\"text\",\"caption\":\"embed_url_user_id\",\"sample_value\":\"null\",\"path\":[\"embed_url_user_id\"]},\"_p_use_stamp_for_approve_only\":{\"ret_value\":\"boolean\",\"caption\":\"use_stamp_for_approve_only\",\"sample_value\":false,\"path\":[\"use_stamp_for_approve_only\"]},\"_p_embed_url\":{\"ret_value\":\"text\",\"caption\":\"embed_url\",\"sample_value\":\"https://ottho-fr.signrequest.com/r/document/b65723a7-20f7-4bca-9d20-3eca110a89f3/68ad0565f86258e4afceb8dd8f470fd264719c5c8552204624015489a08b20af/\",\"path\":[\"embed_url\"]},\"_p_redirect_url\":{\"ret_value\":\"text\",\"caption\":\"redirect_url\",\"sample_value\":\"https://s3.amazonaws.com/appforest_uf/f1612902970523x206570570284392960/Nihoul%2520Victor%2520-%2520Test.pdf\",\"path\":[\"redirect_url\"]},\"_p_redirect_url_declined\":{\"ret_value\":\"text\",\"caption\":\"redirect_url_declined\",\"sample_value\":null,\"path\":[\"redirect_url_declined\"]},\"_p_after_document\":{\"ret_value\":\"text\",\"caption\":\"after_document\",\"sample_value\":null,\"path\":[\"after_document\"]}}}}",
+            "url": "https://[domain].signrequest.com/api/v1/signrequest-quick-create/",
+            "url_params": {
+                "ABW": {
+                    "key": "domain",
+                    "private": true,
+                    "value": "ottho-fr"
+                }
+            }
+        }
+    },
+    "human": "SignRequest",
+    "token_param_name": "Authorization"
+}
